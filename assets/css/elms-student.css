@@ -1,0 +1,84 @@
+/* ============================================================
+   Arandia College eLMS — Student layout updates
+   File: assets/css/elms-student.css
+   Loaded after the student styles in includes/header.php.
+   Double sidebar inside a subject (includes/student_subject_nav.php):
+   same layout as the Teacher side, built on the student theme
+   variables so Dark Mode keeps working.
+   ============================================================ */
+
+/* ── Main menu → icon rail while a subject is open ──────────── */
+@media all {
+  .sidebar.sidebar--rail { width: 76px; min-width: 76px; flex-shrink: 0; }
+  .sidebar--rail .sidebar-header { padding: 1rem .5rem .85rem; justify-content: center; }
+  .sidebar--rail .brand-text { display: none; }
+  .sidebar--rail .nav-menu { padding: .85rem 0; display: flex; flex-direction: column; align-items: center; gap: .45rem; }
+  .sidebar--rail .nav-link { width: 48px; height: 48px; padding: 0; justify-content: center; gap: 0; font-size: 0; border-radius: 12px; }
+  .sidebar--rail .nav-link .icon { width: 21px; height: 21px; }
+}
+.nav-menu .nav-link:focus-visible { outline: 2px solid #fff; outline-offset: -2px; }
+
+/* ── Subject menu ───────────────────────────────────────────── */
+.cnav {
+  --cn-soft: #eef3ff; --cn-strong: #003087; --cn-line: rgba(15, 23, 42, .08);
+  width: 248px; min-width: 248px; flex-shrink: 0;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column;
+  padding: 1rem .8rem 1.25rem;
+  background: var(--bg-card); border-right: 1px solid var(--cn-line);
+  z-index: 45;
+}
+html[data-theme="dark"] .cnav { --cn-soft: rgba(143, 176, 255, .12); --cn-strong: #c7d7ff; --cn-line: rgba(255, 255, 255, .08); }
+.cnav.is-open { z-index: 120; } /* switch menu above the sticky top bar on phones */
+
+.cnav-all { display: inline-flex; align-items: center; gap: .45rem; align-self: flex-start;
+            font-size: .8rem; font-weight: 700; color: var(--text-muted); text-decoration: none;
+            padding: .35rem .55rem; border-radius: 8px; }
+.cnav-all:hover { color: var(--cn-strong); background: var(--cn-soft); }
+.cnav-all .icon { width: 15px; height: 15px; }
+
+.cnav-card { position: relative; margin: .7rem 0 .4rem; }
+.cnav-switch { width: 100%; display: flex; align-items: center; gap: .7rem; text-align: left; cursor: pointer;
+               padding: .8rem .75rem; border: 0; border-radius: 14px; font: inherit; color: #fff;
+               background: linear-gradient(140deg, #003087 0%, #1d4fb8 100%);
+               box-shadow: 0 6px 18px rgba(0, 48, 135, .18); }
+.cnav-switch:hover { filter: brightness(1.06); }
+.cnav-switch:focus-visible { outline: 2px solid #8fb0ff; outline-offset: 2px; }
+.cnav-chip { width: 40px; height: 40px; border-radius: 11px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+             background: rgba(255, 255, 255, .16); color: #fff; font-weight: 900; font-size: .66rem; letter-spacing: 0; }
+.cnav-chip.sm { width: 32px; height: 32px; border-radius: 9px; font-size: .64rem; background: var(--cn-soft); color: var(--cn-strong); }
+.cnav-who { min-width: 0; flex: 1; display: flex; flex-direction: column; }
+.cnav-name { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: .92rem; line-height: 1.2;
+             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.cnav-meta { font-size: .72rem; color: rgba(255, 255, 255, .78); margin-top: .15rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cnav-caret { font-size: .85rem; opacity: .8; }
+
+.cnav-menu { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 400;
+             background: var(--bg-card); border: 1px solid var(--cn-line); border-radius: 12px;
+             box-shadow: 0 14px 34px rgba(15, 23, 42, .16); max-height: 340px; overflow-y: auto; padding: .35rem 0; }
+.cnav-menu[hidden] { display: none; }
+.cnav-menu-h { font-size: .64rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; color: var(--text-muted); padding: .45rem .8rem .3rem; }
+.cnav-opt { display: flex; align-items: center; gap: .6rem; padding: .45rem .8rem; text-decoration: none; color: var(--text-main); }
+.cnav-opt:hover, .cnav-opt:focus-visible { background: var(--bg-body); outline: none; }
+.cnav-opt.on { background: var(--cn-soft); }
+.cnav-opt b { display: block; font-size: .82rem; font-weight: 700; line-height: 1.25; }
+.cnav-opt small { display: block; font-size: .72rem; color: var(--text-muted); }
+
+.cnav-links { display: flex; flex-direction: column; gap: .2rem; margin-top: .9rem; }
+.cnav-link { display: flex; align-items: center; gap: .65rem; padding: .6rem .7rem; border-radius: 10px;
+             font-size: .86rem; font-weight: 600; color: var(--text-main); text-decoration: none; transition: background .15s, color .15s; }
+.cnav-link:hover { background: var(--bg-body); }
+.cnav-link:focus-visible { outline: 2px solid var(--cn-strong); outline-offset: -2px; }
+.cnav-link.on { background: var(--cn-soft); color: var(--cn-strong); font-weight: 800; box-shadow: inset 3px 0 0 var(--cn-strong); }
+.cnav-ic { display: inline-flex; color: var(--text-muted); }
+.cnav-link.on .cnav-ic { color: var(--cn-strong); }
+.cnav-ic .icon { width: 18px; height: 18px; }
+.cnav-tx { flex: 1; min-width: 0; }
+.cnav-badge { font-size: .7rem; font-weight: 800; padding: .08rem .5rem; border-radius: 100px; background: #fff5d9; color: #b38600; }
+html[data-theme="dark"] .cnav-badge { background: rgba(255, 196, 0, .16); color: #ffd666; }
+
+@media (max-width: 1100px) and (min-width: 992px) {
+  .cnav { width: 216px; min-width: 216px; }
+}
+/* Phones/tablets: the subject menu opens with the main menu in the drawer
+   (assets/css/elms-responsive.css). */

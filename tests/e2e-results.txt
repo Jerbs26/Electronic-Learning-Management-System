@@ -1,0 +1,54 @@
+PASS  T1 Admin creates Teacher → saved in users  — Account created successfully.
+PASS  T1b Teacher without email is rejected (could never receive sign-in code)  — Email is required — the sign-in code is sent there.
+PASS  T2 Admin creates Student → saved with section  — Account created successfully. Enrolled in 8 subjects of Grade 9.
+PASS  T2b Student with a section that does not exist is rejected  — That section does not exist. Add it on the Subjects page first.
+FAIL  T1c New account logs in through the real login form → its dashboard  — /login.php
+FAIL  Admin opening a Teacher page is sent to the admin dashboard
+PASS  Logout → protected page goes to login
+PASS  T3 Admin assigns Teacher → teacher_assignments updated  — Teacher assigned.
+PASS  T3 live: Teacher's open My Classes shows the class without a manual refresh
+PASS  T4 Admin enrolls Student → enrollments saved  — Enrollment saved.
+PASS  T4 live: Student's open My Subjects shows Science 9 with their teacher
+PASS  T4 Teacher sees the Student in the class list
+PASS  T5 Teacher creates Assignment → saved with owner + gradebook item  — Assignment created.
+PASS  T5b Double submit of the same assignment does not create a duplicate
+PASS  T5 live (real 5 s timer, no reload): Student page shows the new assignment + toast  — toasts: ["New assignment: QA Lab Report 65668 · Science 9"]
+PASS  T5 Teacher sees the assignment in their list
+PASS  T6 Student submits → submission saved for the right student + assignment
+PASS  T6 live: Teacher gets a "submitted" notification  — ["Sam Student submitted QA Lab Report 65668"]
+PASS  T6 live: Teacher's assignment list refreshed to show the submission
+PASS  Student cannot grade (grade_one as student)
+PASS  T7 Teacher grades → score saved  — Grade saved.
+PASS  T7 live: Student Grades shows 17 / 20 without refresh
+PASS  Student total = Teacher gradebook total (one source of truth)  — teacher 85% · student "r, Quinn 85% 17 / 20"
+FAIL  T8 Teacher saves attendance → row saved (student, subject, date, status, recorded_by)  — Attendance is taken Monday to Friday only.
+FAIL  T8b Saving the same day again updates, never duplicates
+FAIL  T8 live: Student is notified of the attendance update  — []
+PASS  T9 Teacher posts announcement → saved  — Announcement posted successfully.
+PASS  T9 live: Student bell gets the announcement (unread +1)  — 19 → 20
+PASS  Mark all read is saved on the server
+PASS  Teacher's class announcement does not reach admins' bell
+PASS  Isolation: ABM-A student does not get ABM-B teacher's assignment
+PASS  Isolation: ABM-A teacher does not see it in their list
+PASS  Isolation: …nor as a "Missing" column in their gradebook
+PASS  Isolation: ABM-A teacher cannot delete it
+PASS  Isolation: no live notification leaks to the other section  — []
+PASS  Security: Student → Admin API (accounts list) is refused  — HTTP 403 You are not allowed to do this.
+PASS  Security: Teacher → Admin API (enrollments list) is refused  — HTTP 403 You are not allowed to do this.
+PASS  Security: Teacher → Admin API (create account) is refused  — HTTP 403 You are not allowed to do this.
+PASS  Security: Student → Teacher API (gradebook) is refused  — HTTP 403 You are not allowed to do this.
+PASS  Security: Teacher → other teacher's class gradebook is refused  — HTTP 200 Not your subject.
+PASS  Security: Teacher → other teacher's quiz is refused  — HTTP 403 This quiz is not in one of your subjects.
+PASS  Security: Unauthenticated → live feed is refused  — HTTP 401 Your session has ended. Please sign in again.
+PASS  Security: Unauthenticated → assignments is refused  — HTTP 401 Your session has ended. Please sign in again.
+PASS  Security: Unauthenticated → announcements is refused  — HTTP 401 Your session has ended. Please sign in again.
+PASS  Security: Student cannot change grades (bulk grade)
+PASS  Offline: page keeps working and shows "Connection lost"  — {"last":218,"dirty":false,"typing":false,"modal":false,"failures":3,"stopped":false}
+PASS  Back online: missed grade change arrives and page shows 19 / 20
+PASS  Admin deactivates Student → saved  — Account updated successfully.
+PASS  Deactivated student: live page shows "session has ended"
+PASS  Deactivated student is signed out on next page
+PASS  Head Admin edit keeps role Head Admin and Active
+
+JS errors: none
+46 passed, 5 failed

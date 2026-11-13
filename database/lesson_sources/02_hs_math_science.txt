@@ -1,0 +1,215 @@
+@ HS7-MATH
+1 | Sets | A set is a well-defined collection of objects called elements.
+- Sets are written with braces, like A = {1, 2, 3}.
+- The union of A and B contains elements in A or B; the intersection contains elements in both.
+- Venn diagrams help show how sets relate to each other.
+? If A = {2, 4, 6, 8} and B = {4, 8, 12}, find A ∪ B and A ∩ B.
+2 | Integers and Their Operations | Integers are whole numbers and their negatives, including zero.
+- Adding a negative number is the same as subtracting its positive value.
+- Same signs: add and keep the sign. Different signs: subtract and use the sign of the larger absolute value.
+- In multiplication and division, same signs give a positive answer and different signs give a negative answer.
+? Solve: (−8) + 5, (−6) × (−3), and 20 ÷ (−4).
+3 | Measurement and Conversion | Measurement uses standard units so everyone gets the same result.
+- The metric system uses base units: meter (length), gram (mass), and liter (volume).
+- Prefixes show size: kilo = 1,000, centi = 1/100, milli = 1/1,000.
+- To convert to a smaller unit multiply; to a larger unit divide.
+? Convert 2.5 kilometers to meters and 450 centimeters to meters.
+4 | Algebraic Expressions | An algebraic expression combines numbers, variables, and operations.
+- In 3x + 5, 3 is the coefficient, x is the variable, and 5 is the constant.
+- Like terms have the same variable and exponent and can be combined.
+- To evaluate an expression, substitute the value of the variable.
+? Simplify 4x + 3 − 2x + 7, then evaluate it when x = 2.
+5 | Linear Equations in One Variable | A linear equation in one variable can be solved by isolating the variable.
+- Whatever you do to one side of the equation, do the same to the other side.
+- Use inverse operations: addition undoes subtraction, multiplication undoes division.
+- Check your answer by substituting it back into the equation.
+? Solve 3x − 7 = 11 and check your answer.
+
+@ HS8-MATH
+1 | Factoring Polynomials | Factoring writes a polynomial as a product of simpler expressions.
+- Always look first for a common monomial factor: 6x + 9 = 3(2x + 3).
+- Difference of two squares: a² − b² = (a + b)(a − b).
+- Trinomials like x² + 5x + 6 factor into (x + 2)(x + 3).
+? Factor x² − 49 and x² + 7x + 12.
+2 | Rational Algebraic Expressions | A rational algebraic expression is a fraction whose numerator and denominator are polynomials.
+- Simplify by factoring and canceling common factors.
+- The denominator can never equal zero.
+- Add or subtract by finding a common denominator.
+? Simplify (x² − 9) / (x + 3).
+3 | Linear Equations in Two Variables | A linear equation in two variables, like y = 2x + 1, has a straight-line graph.
+- In y = mx + b, m is the slope and b is the y-intercept.
+- Slope measures steepness: rise over run.
+- Any point on the line is a solution of the equation.
+? Find the slope and y-intercept of y = −3x + 4, then graph it.
+4 | Systems of Linear Equations | A system of linear equations is two or more equations solved together.
+- The solution is the point where the lines intersect.
+- Methods include graphing, substitution, and elimination.
+- Parallel lines have no solution; the same line has infinitely many.
+? Solve the system x + y = 10 and x − y = 2 by elimination.
+5 | Triangle Congruence | Two triangles are congruent if they have the same size and shape.
+- SSS: three pairs of equal sides.
+- SAS: two sides and the included angle are equal.
+- ASA: two angles and the included side are equal.
+? Draw two triangles and explain which postulate proves they are congruent.
+
+@ HS9-MATH
+1 | Quadratic Equations | A quadratic equation has the form ax² + bx + c = 0, where a is not zero.
+- Solve by factoring, completing the square, or the quadratic formula.
+- Quadratic formula: x = [−b ± √(b² − 4ac)] / 2a.
+- The discriminant b² − 4ac tells how many real roots there are.
+? Solve x² − 5x + 6 = 0 by factoring.
+2 | Quadratic Functions | A quadratic function, y = ax² + bx + c, has a U-shaped graph called a parabola.
+- If a is positive the parabola opens upward; if negative, downward.
+- The vertex is the highest or lowest point.
+- The axis of symmetry passes through the vertex.
+? Find the vertex of y = x² − 4x + 3.
+3 | Variation | Variation describes how one quantity changes in relation to another.
+- Direct variation: y = kx, as x increases, y increases.
+- Inverse variation: y = k/x, as x increases, y decreases.
+- Joint variation: y = kxz, y varies with two quantities at once.
+? If y varies directly with x and y = 12 when x = 3, find y when x = 7.
+4 | Radicals | A radical expression contains a root, such as a square root.
+- Simplify by taking out perfect squares: √50 = 5√2.
+- Only like radicals can be added or subtracted.
+- Rationalize the denominator to remove radicals from the bottom of a fraction.
+? Simplify √72 and 3√2 + 5√2.
+5 | Basic Trigonometry | Trigonometry studies the relationship between the sides and angles of right triangles.
+- SOH-CAH-TOA: sine = opposite/hypotenuse, cosine = adjacent/hypotenuse, tangent = opposite/adjacent.
+- The hypotenuse is the longest side, opposite the right angle.
+- Trigonometry is used to find heights and distances.
+? A ladder 10 m long makes a 60° angle with the ground. How high does it reach?
+
+@ HS10-MATH
+1 | Sequences | A sequence is an ordered list of numbers that follows a pattern.
+- Arithmetic sequence: add the same number each time; nth term = a₁ + (n − 1)d.
+- Geometric sequence: multiply by the same number each time; nth term = a₁ · rⁿ⁻¹.
+- Series is the sum of the terms of a sequence.
+? Find the 10th term of 3, 7, 11, 15, ...
+2 | Polynomials and Polynomial Equations | A polynomial is an expression with variables raised to whole-number exponents.
+- Use synthetic division to divide a polynomial by (x − c).
+- The Remainder Theorem: P(c) is the remainder when P(x) is divided by (x − c).
+- The Factor Theorem: (x − c) is a factor if P(c) = 0.
+? Use the Remainder Theorem to find the remainder when x³ − 2x + 4 is divided by (x − 2).
+3 | Circles | A circle is the set of all points equally distant from a center.
+- A chord connects two points on a circle; the diameter is the longest chord.
+- A central angle equals its intercepted arc.
+- An inscribed angle is half its intercepted arc.
+? An inscribed angle intercepts an 80° arc. What is its measure?
+4 | Permutations and Combinations | Counting techniques help us find how many ways things can be arranged or chosen.
+- Permutation: order matters; nPr = n! / (n − r)!.
+- Combination: order does not matter; nCr = n! / [r!(n − r)!].
+- Factorial: n! = n × (n − 1) × ... × 1.
+? How many ways can 3 officers be chosen from 8 students for president, vice president, and secretary?
+5 | Probability and Statistics | Probability measures how likely an event is, and statistics organizes and interprets data.
+- Probability = favorable outcomes / total outcomes.
+- Measures of position include quartiles, deciles, and percentiles.
+- Data can be summarized using tables and graphs.
+? What is the probability of drawing a red card from a standard deck of 52 cards?
+
+@ HS7-SCI
+1 | The Scientific Method | The scientific method is a step-by-step way of answering questions about the world.
+- Steps: observe, ask a question, form a hypothesis, experiment, analyze, and conclude.
+- A good experiment changes only one variable at a time.
+- Results must be recorded honestly, even if they do not support the hypothesis.
+? Design a simple experiment to test whether sunlight affects plant growth.
+2 | Solutions | A solution is a uniform mixture of a solute dissolved in a solvent.
+- In salt water, salt is the solute and water is the solvent.
+- Water is called the universal solvent.
+- Temperature and stirring affect how fast a solute dissolves.
+? List three solutions found at home and identify the solute and solvent of each.
+3 | Cells | The cell is the basic unit of life, and all living things are made of cells.
+- Plant cells have a cell wall and chloroplasts; animal cells do not.
+- The nucleus controls the cell's activities.
+- The cell membrane controls what enters and leaves the cell.
+? Draw and label a plant cell and an animal cell.
+4 | Ecosystems | An ecosystem is a community of living things interacting with their nonliving environment.
+- Producers make their own food; consumers eat other organisms.
+- Decomposers break down dead matter and return nutrients to the soil.
+- Food chains and food webs show how energy flows.
+? Create a food chain with at least four organisms found in the Philippines.
+5 | Motion | Motion is a change in an object's position over time.
+- Distance is total path length; displacement is the straight-line change in position.
+- Speed = distance ÷ time.
+- Velocity includes both speed and direction.
+? A jeepney travels 60 km in 1.5 hours. What is its average speed?
+
+@ HS8-SCI
+1 | Forces and Newton's Laws | Newton's laws of motion describe how forces affect the movement of objects.
+- First law (inertia): an object stays at rest or in motion unless acted on by a force.
+- Second law: force = mass × acceleration.
+- Third law: for every action there is an equal and opposite reaction.
+? Give an everyday example of each of Newton's three laws.
+2 | Work, Power, and Energy | Work is done when a force moves an object, and energy is the ability to do work.
+- Work = force × distance.
+- Potential energy is stored energy; kinetic energy is energy of motion.
+- Energy cannot be created or destroyed, only changed from one form to another.
+? Explain the energy changes in a swinging pendulum.
+3 | Earthquakes and Faults | Earthquakes happen when rocks along a fault suddenly move and release energy.
+- The focus is where the earthquake starts underground; the epicenter is directly above it.
+- Magnitude measures energy; intensity measures the effects on people and structures.
+- The Philippines lies in the Pacific Ring of Fire, so earthquakes are common.
+? Prepare an earthquake safety plan for your home.
+4 | The Periodic Table | The periodic table organizes elements by atomic number and properties.
+- Rows are called periods; columns are called groups or families.
+- Metals are on the left, nonmetals on the right, and metalloids in between.
+- Elements in the same group have similar properties.
+? Identify the group and period of oxygen, sodium, and iron.
+5 | The Digestive System | The digestive system breaks food down into nutrients the body can absorb.
+- Digestion begins in the mouth with chewing and saliva.
+- The stomach mixes food with acids and enzymes.
+- Most nutrients are absorbed in the small intestine.
+? Trace the path of a piece of bread through the digestive system.
+
+@ HS9-SCI
+1 | Respiratory and Circulatory Systems | These two systems work together to deliver oxygen to the body and remove carbon dioxide.
+- The lungs take in oxygen and release carbon dioxide.
+- The heart pumps blood through arteries, veins, and capillaries.
+- Exercise and a healthy diet keep both systems strong.
+? Measure your pulse before and after jumping for one minute. Explain the change.
+2 | Heredity | Heredity is the passing of traits from parents to offspring through genes.
+- Genes come in pairs called alleles; dominant alleles hide recessive ones.
+- Gregor Mendel is known as the father of genetics.
+- A Punnett square predicts the possible traits of offspring.
+? Use a Punnett square to cross two parents who are both Tt for height.
+3 | Biodiversity and Extinction | Biodiversity is the variety of life in an area, and it keeps ecosystems stable.
+- The Philippines is one of the world's megadiverse countries.
+- Habitat loss, pollution, and overharvesting threaten species.
+- Endangered species include the Philippine eagle and the tamaraw.
+? Suggest three actions students can take to protect local biodiversity.
+4 | Volcanoes | Volcanoes form where magma rises to the Earth's surface.
+- Active volcanoes have erupted recently; inactive ones have not erupted in a long time.
+- Examples in the Philippines include Mayon, Taal, and Pinatubo.
+- Volcanic eruptions can be dangerous but also create fertile soil.
+? Explain why Mayon Volcano has a near-perfect cone shape.
+5 | Chemical Bonding | Atoms join together through chemical bonds to form compounds.
+- Ionic bonds form when electrons are transferred, usually between a metal and a nonmetal.
+- Covalent bonds form when electrons are shared, usually between nonmetals.
+- Table salt (NaCl) is ionic; water (H₂O) is covalent.
+? Classify CO₂, KCl, and CH₄ as ionic or covalent.
+
+@ HS10-SCI
+1 | Plate Tectonics | The Earth's outer layer is divided into plates that move slowly over time.
+- Plates can move apart (divergent), collide (convergent), or slide past each other (transform).
+- Plate movement causes earthquakes, volcanoes, and mountain formation.
+- The Philippine Trench is formed by a convergent boundary.
+? Explain how the Himalayas were formed.
+2 | The Electromagnetic Spectrum | The electromagnetic spectrum is the full range of light waves, from radio waves to gamma rays.
+- Order from longest to shortest wavelength: radio, microwave, infrared, visible, ultraviolet, X-ray, gamma.
+- Shorter wavelengths carry more energy.
+- Each type has uses, such as microwaves for cooking and X-rays for medicine.
+? List one use and one risk of ultraviolet radiation.
+3 | The Nervous and Endocrine Systems | These systems control and coordinate the body's activities.
+- The nervous system sends fast electrical signals through neurons.
+- The endocrine system releases hormones into the blood for slower, longer effects.
+- Both help the body maintain balance, called homeostasis.
+? Explain what happens in your body when you touch something hot.
+4 | DNA and Evolution | DNA carries genetic instructions, and changes over generations lead to evolution.
+- DNA is a double helix made of nucleotides.
+- Mutations are changes in DNA that can create new traits.
+- Natural selection favors traits that help organisms survive and reproduce.
+? Give an example of an adaptation that helps an animal survive in its environment.
+5 | Gas Laws | Gas laws describe how pressure, volume, and temperature of gases are related.
+- Boyle's Law: at constant temperature, pressure and volume are inversely related.
+- Charles's Law: at constant pressure, volume and temperature are directly related.
+- Temperature must be in Kelvin for gas law calculations.
+? Why does a balloon shrink when placed in a refrigerator?

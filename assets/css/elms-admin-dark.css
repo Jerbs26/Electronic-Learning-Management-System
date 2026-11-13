@@ -1,0 +1,116 @@
+/* ============================================================
+   Arandia College eLMS — Admin Dark Mode
+   File: assets/css/elms-admin-dark.css
+   Turned on from the top-bar profile menu (Dark mode). Saved in
+   localStorage "elms_theme" — the same setting as the Teacher and
+   Student sides. Only applies when <html data-theme="dark">.
+   ============================================================ */
+
+/* Switch shown in the profile menu (light and dark) */
+.tb-dark-toggle { width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; }
+.tb-dark-toggle .dm-switch { margin-left: auto; }
+.dm-switch { width: 34px; height: 20px; border-radius: 100px; background: #e2e8f0; position: relative; display: inline-block; flex-shrink: 0; transition: background .2s; }
+.dm-switch-knob { width: 16px; height: 16px; border-radius: 50%; background: #fff; position: absolute; top: 2px; left: 2px; transition: left .2s; box-shadow: 0 1px 3px rgba(0, 0, 0, .3); }
+html[data-theme="dark"] .dm-switch { background: #3b82f6; }
+html[data-theme="dark"] .dm-switch-knob { left: 16px; }
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --primary-light: rgba(143, 176, 255, .14);
+  --danger-light: rgba(248, 113, 113, .14);
+  --success-light: rgba(52, 211, 153, .14);
+  --warning-light: rgba(251, 191, 36, .14);
+  --purple-light: rgba(196, 140, 255, .14);
+  --bg: #0b1220;
+  --surface: #131c2e;
+  --surface-hover: #1a2539;
+  --border: #26324a;
+  --border-muted: #1f2a3f;
+  --text-primary: #e5ebf5;
+  --text-secondary: #a3b0c6;
+  --text-muted: #7d8aa3;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, .35);
+  --shadow: 0 4px 16px rgba(0, 0, 0, .4);
+  --shadow-lg: 0 8px 28px rgba(0, 0, 0, .5);
+  /* some admin pages use the teacher/student names */
+  --white: #131c2e;
+  --text-dark: #e5ebf5;
+  --text-light: #a3b0c6;
+  --bg-light: #0b1220;
+  --bg-card: #131c2e;
+  --text-main: #e5ebf5;
+}
+html[data-theme="dark"] body { background: var(--bg); color: var(--text-primary); }
+
+/* Brand colors used as TEXT get lighter tints so they stay readable on dark.
+   Places that use them as a filled BACKGROUND with white text are set back
+   to a strong color below. */
+html[data-theme="dark"] {
+  --primary: #8fb0ff;
+  --primary-hover: #a9c3ff;
+  --success: #34d399;
+  --danger: #f87171;
+  --warning: #fbbf24;
+  --purple: #d6a4ff;
+  --accent-color: #8fb0ff;
+}
+html[data-theme="dark"] .btn-primary,
+html[data-theme="dark"] .btn-edit:hover { background: #1d4fb8; border-color: #1d4fb8; color: #fff; }
+html[data-theme="dark"] .btn-primary:hover { background: #2a5fd0; border-color: #2a5fd0; color: #fff; }
+html[data-theme="dark"] .btn-danger:hover { background: #b91c1c; border-color: #b91c1c; color: #fff; }
+html[data-theme="dark"] .btn-warning:hover { background: #b45309; border-color: #b45309; color: #fff; }
+html[data-theme="dark"] .btn:focus-visible { box-shadow: 0 0 0 3px rgba(143, 176, 255, .35); }
+html[data-theme="dark"] .toast { background: #e5ebf5; color: #0b1220; }
+html[data-theme="dark"] .toast-icon.ok { background: #059669; color: #fff; }
+html[data-theme="dark"] .toast-icon.err { background: #dc2626; color: #fff; }
+
+/* Tables, chips and fields that had a fixed light background */
+html[data-theme="dark"] thead,
+html[data-theme="dark"] .status-inactive,
+html[data-theme="dark"] .count-chip.zero { background: var(--surface-hover); }
+html[data-theme="dark"] input:disabled,
+html[data-theme="dark"] select:disabled,
+html[data-theme="dark"] textarea:disabled { background: #0f1828 !important; color: var(--text-muted); }
+html[data-theme="dark"] input, html[data-theme="dark"] select, html[data-theme="dark"] textarea { color-scheme: dark; }
+
+/* ── Top bar ───────────────────────────────────────────────── */
+html[data-theme="dark"] .topbar.admin-topbar { background: var(--surface); border-bottom-color: var(--border); color: var(--text-secondary); }
+html[data-theme="dark"] .tb-icon-btn,
+html[data-theme="dark"] .tb-profile { background: var(--surface); border-color: var(--border); color: var(--text-primary); }
+html[data-theme="dark"] .tb-icon-btn:hover,
+html[data-theme="dark"] .tb-profile:hover { background: var(--surface-hover); color: #fff; }
+html[data-theme="dark"] .tb-badge { border-color: var(--surface); }
+html[data-theme="dark"] .tb-search input { background: var(--bg); border-color: var(--border); color: var(--text-primary); }
+html[data-theme="dark"] .tb-search input:focus { background: var(--surface); border-color: #8fb0ff; }
+html[data-theme="dark"] .tb-search input::placeholder { color: var(--text-muted); }
+html[data-theme="dark"] .tb-kbd { background: var(--surface); border-color: var(--border); }
+html[data-theme="dark"] .tb-avatar { background: rgba(143, 176, 255, .14); color: #c7d7ff; }
+html[data-theme="dark"] .tb-dd { background: var(--surface); border-color: var(--border); box-shadow: 0 12px 32px rgba(0, 0, 0, .45); }
+html[data-theme="dark"] .tb-dd-h { color: var(--text-primary); border-bottom-color: var(--border); }
+html[data-theme="dark"] .tb-dd-item { color: #cbd5e1; }
+html[data-theme="dark"] .tb-dd-item:hover, html[data-theme="dark"] .tb-dd-item.hover { background: var(--surface-hover); }
+html[data-theme="dark"] .tb-dd-item.danger, html[data-theme="dark"] .tb-dd-item.danger .ico { color: #f87171; }
+html[data-theme="dark"] .tb-icon-btn:focus-visible, html[data-theme="dark"] .tb-profile:focus-visible { outline-color: #8fb0ff; }
+@media (max-width: 700px) {
+  html[data-theme="dark"] .tb-search input:focus { color: var(--text-primary); }
+  html[data-theme="dark"] .tb-search input:not(:focus)::placeholder { color: transparent; }  /* folded search button on phones */
+}
+
+/* ── Sign-out window (inline colors in includes/topbar.php) ── */
+html[data-theme="dark"] #signoutConfirmOverlay .modal { background: var(--surface); }
+html[data-theme="dark"] #signoutConfirmOverlay h3 { color: var(--text-primary) !important; }
+html[data-theme="dark"] #signoutConfirmOverlay p { color: var(--text-secondary) !important; }
+html[data-theme="dark"] #signoutConfirmOverlay button[onclick^="closeSignoutConfirm"] { background: var(--surface-hover) !important; border-color: var(--border) !important; color: var(--text-primary) !important; }
+html[data-theme="dark"] #deleteModal p { color: var(--text-secondary) !important; }
+
+/* Page-specific light backgrounds */
+html[data-theme="dark"] .status-revoked { background: var(--surface-hover); }
+html[data-theme="dark"] .lesson th,
+html[data-theme="dark"] .lesson blockquote,
+html[data-theme="dark"] .lesson details { background: var(--surface-hover); }
+html[data-theme="dark"] .db-bar .tip { background: #e5ebf5; color: #0b1220; }
+html[data-theme="dark"] tr:hover td { background: var(--surface-hover); }
+html[data-theme="dark"] .action-other { background: var(--surface-hover); }
+
+/* Admission role badge (Admins and Logs, All accounts, Activity log) */
+html[data-theme="dark"] .role-admission { background: rgba(34, 211, 238, .14); color: #67e8f9; }

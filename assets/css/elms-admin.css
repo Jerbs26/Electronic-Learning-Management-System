@@ -1,0 +1,121 @@
+/* ============================================================
+   Arandia College eLMS — Admin design system
+   File: assets/css/elms-admin.css
+   Loaded after the admin styles in includes/header.php, so anything
+   here wins. Currently: the top bar (search, notifications, profile).
+   ============================================================ */
+
+:root { --topbar-h: 60px; }
+
+/* ── Top bar ───────────────────────────────────────────────── */
+.topbar.admin-topbar {
+  display: flex !important;
+  height: var(--topbar-h);
+  background: #ffffff;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 1.75rem;
+  gap: 1rem;
+}
+.tb-right { display: flex; align-items: center; gap: .6rem; margin-left: auto; }
+
+.tb-icon-btn {
+  position: relative;
+  width: 40px; height: 40px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid #e2e8f0; border-radius: 10px;
+  background: #fff; color: #475569; cursor: pointer;
+}
+.tb-icon-btn:hover { background: #f8fafc; color: #0f172a; }
+.tb-icon-btn .ico { width: 18px; height: 18px; }
+.tb-icon-btn:focus-visible, .tb-profile:focus-visible { outline: 2px solid #003087; outline-offset: 2px; }
+.tb-badge {
+  position: absolute; top: -5px; right: -5px;
+  min-width: 18px; height: 18px; padding: 0 5px;
+  border-radius: 100px; background: #dc2626; color: #fff;
+  font-size: .66rem; font-weight: 800; line-height: 18px; text-align: center;
+  border: 2px solid #fff;
+}
+
+.tb-search { position: relative; display: flex; align-items: center; }
+.tb-search input {
+  width: 300px; height: 40px;
+  padding: 0 2.2rem 0 2.35rem;
+  border: 1px solid #e2e8f0; border-radius: 10px;
+  background: #f8fafc; font: inherit; font-size: .85rem; color: #0f172a;
+  outline: none; transition: border-color .15s, background .15s, width .2s;
+}
+.tb-search input:focus { border-color: #003087; background: #fff; }
+.tb-search input::-webkit-search-cancel-button { display: none; }
+.tb-search-ico { position: absolute; left: .75rem; color: #94a3b8; display: flex; pointer-events: none; }
+.tb-search-ico .ico { width: 16px; height: 16px; }
+.tb-kbd {
+  position: absolute; right: .6rem;
+  font-weight: 600; font-size: .7rem; line-height: 1; color: #94a3b8;
+  border: 1px solid #e2e8f0; border-radius: 5px; padding: .18rem .4rem; background: #fff;
+  pointer-events: none;
+}
+.tb-search input:focus ~ .tb-kbd { display: none; }
+
+.tb-wrap { position: relative; }
+.tb-profile {
+  display: inline-flex; align-items: center; gap: .55rem;
+  height: 40px; padding: 0 .6rem 0 .3rem;
+  border: 1px solid #e2e8f0; border-radius: 10px; background: #fff;
+  cursor: pointer; font: inherit; color: #0f172a;
+}
+.tb-profile:hover { background: #f8fafc; }
+.tb-avatar {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: rgba(0, 48, 135, .1); color: #003087;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .74rem; font-weight: 800;
+}
+.tb-profile-name { font-size: .85rem; font-weight: 600; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tb-chev { color: #94a3b8; display: flex; }
+.tb-chev .ico { width: 15px; height: 15px; }
+
+/* Dropdowns */
+.tb-dd {
+  display: none;
+  position: absolute; top: calc(100% + 8px); right: 0;
+  width: 340px; max-height: 420px; overflow-y: auto;
+  background: #fff; border: 1px solid #e2e8f0; border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, .12);
+  z-index: 300; padding: .4rem 0;
+}
+.tb-dd.show { display: block; }
+.tb-results { left: 0; right: auto; width: 100%; min-width: 320px; }
+.tb-menu-panel { width: 230px; }
+.tb-dd-h { font-size: .82rem; font-weight: 700; color: #0f172a; padding: .6rem 1rem .5rem; border-bottom: 1px solid #f1f5f9; }
+.tb-dd-item {
+  display: flex; align-items: center; gap: .7rem;
+  padding: .6rem 1rem; text-decoration: none; color: #334155;
+}
+.tb-dd-item:hover, .tb-dd-item.hover { background: #f8fafc; }
+.tb-dd-item .ico { width: 16px; height: 16px; color: #94a3b8; }
+.tb-dd-item.danger, .tb-dd-item.danger .ico { color: #dc2626; }
+.tb-dd-t { display: block; font-size: .85rem; font-weight: 600; color: inherit; }
+.tb-dd-s { display: block; font-size: .75rem; color: #94a3b8; margin-top: .05rem; }
+.tb-dd-empty { padding: 1rem; font-size: .84rem; color: #94a3b8; }
+.tb-group { font-size: .66rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #94a3b8; padding: .6rem 1rem .25rem; }
+.tb-dot { width: 8px; height: 8px; border-radius: 50%; background: #94a3b8; flex-shrink: 0; }
+.tb-dot.warn { background: #b38600; }
+
+/* Page area spacing under the new top bar */
+.main-content { padding-top: 1.5rem; }
+
+/* ── Small screens ───────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .tb-search input { width: 220px; }
+  .tb-profile-name { display: none; }
+}
+@media (max-width: 700px) {
+  .topbar.admin-topbar { padding: 0 1rem; position: relative; }
+  .tb-search input { width: 40px; padding: 0; color: transparent; cursor: pointer; }
+  .tb-search input:not(:focus)::placeholder { color: transparent; }
+  .tb-search-ico { left: 12px; z-index: 1; }
+  .tb-search input:focus { width: calc(100vw - 2rem); position: fixed; left: 1rem; top: 10px; padding: 0 1rem 0 2.35rem; color: #0f172a; z-index: 310; }
+  .tb-kbd { display: none; }
+  .tb-results { position: fixed; left: 1rem; right: 1rem; top: 58px; width: auto; min-width: 0; }
+}

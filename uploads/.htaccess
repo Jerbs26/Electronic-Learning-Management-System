@@ -1,0 +1,35 @@
+# Uploaded files: list nothing, execute nothing
+Options -Indexes -ExecCGI
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+<FilesMatch "(?i)\.(php[0-9]?|phtml|phar|pl|py|cgi|sh|html?|svg|js)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Show the ORIGINAL file name when a file is opened or downloaded.
+# Stored as  mod_6aef58edc9fcf__04_Handout.pdf  -> the browser tab / download name is  04_Handout.pdf
+# (same rule as elmsFileLabel() in includes/upload_names.php; older files without "__" are left as they are)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:.*/)?[a-z]+_(?:[0-9]+_)*[0-9a-f]{13}__([^/]+)$ - [E=ELMS_ORIG:$1]
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Content-Disposition "inline; filename=\"%{ELMS_ORIG}e\"" env=ELMS_ORIG
+</IfModule>

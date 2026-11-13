@@ -1,0 +1,105 @@
+/* ============================================================
+   Arandia College eLMS — Public pages: phone menu + small fixes
+   File: assets/css/elms-public.css
+   Used by FAQ.php, contact.php, helpcenter.php, helpdesk.php and
+   privacy.php, with assets/js/elms-public-nav.js.
+   Their own styles hide the menu links on phones; this adds a menu
+   button that opens the same links as a slide-in sidebar.
+   ============================================================ */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body { overflow-x: clip; }
+img { max-width: 100%; }
+
+.pub-nav-toggle, .pub-drawer, .pub-drawer-backdrop { display: none; }
+
+@media (max-width: 900px) {
+  body > nav { position: sticky; }
+  body > nav .nav-links { display: none !important; }
+
+  .pub-nav-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; flex-shrink: 0;
+    border: 1px solid rgba(15, 23, 42, .12); border-radius: 10px;
+    background: #fff; color: #0B2545; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .pub-nav-toggle:focus-visible { outline: 2px solid #003087; outline-offset: 2px; }
+  .pub-nav-toggle svg, .pub-drawer-close svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
+
+  /* dimmed page behind the open sidebar */
+  .pub-drawer-backdrop {
+    display: block; position: fixed; inset: 0; z-index: 1150;
+    background: rgba(15, 23, 42, .52);
+    opacity: 0; visibility: hidden;
+    transition: opacity .26s ease, visibility 0s linear .26s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body.pub-nav-open .pub-drawer-backdrop { opacity: 1; visibility: visible; transition: opacity .26s ease; }
+  body.pub-nav-open { overflow: hidden; }
+
+  /* the sidebar itself (same navy as the eLMS sidebar) */
+  .pub-drawer {
+    display: flex; flex-direction: column;
+    position: fixed; top: 0; bottom: 0; left: 0; z-index: 1200;
+    width: min(300px, calc(100vw - 56px));
+    height: 100vh; height: 100dvh;
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom));
+    background: #101d34; color: #fff;
+    overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+    box-shadow: 8px 0 32px rgba(0, 0, 0, .28);
+    transform: translateX(-100%); visibility: hidden;
+    transition: transform .26s cubic-bezier(.4, 0, .2, 1), visibility 0s linear .26s;
+  }
+  body.pub-nav-open .pub-drawer { transform: none; visibility: visible; transition: transform .26s cubic-bezier(.4, 0, .2, 1), visibility 0s; }
+  /* Opens from the same side as the menu button (set by elms-public-nav.js) */
+  .pub-drawer.from-right {
+    left: auto; right: 0;
+    transform: translateX(100%);
+    box-shadow: -8px 0 32px rgba(0, 0, 0, .28);
+    padding-right: env(safe-area-inset-right);
+  }
+  body.pub-nav-open .pub-drawer.from-right { transform: none; }
+
+  .pub-drawer-head {
+    display: flex; align-items: center; gap: .75rem;
+    min-height: 76px; padding: 1rem 1rem 1rem 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+  }
+  .pub-drawer-head img { width: 44px; height: 44px; object-fit: contain; flex-shrink: 0; }
+  .pub-drawer-head strong { flex: 1; font-size: 1rem; font-weight: 800; color: #fff; line-height: 1.25; }
+  .pub-drawer-close {
+    width: 40px; height: 40px; flex-shrink: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255, 255, 255, .16); border-radius: 10px;
+    background: transparent; color: #fff; cursor: pointer;
+  }
+  .pub-drawer-nav { display: flex; flex-direction: column; gap: .25rem; padding: 1rem .75rem 0; }
+  .pub-drawer-nav a {
+    display: flex; align-items: center; min-height: 44px;
+    padding: .6rem .85rem; border-radius: 10px;
+    font-size: .95rem; font-weight: 600; color: #93a0bb; text-decoration: none;
+    transition: background .15s, color .15s;
+  }
+  .pub-drawer-nav a:hover, .pub-drawer-nav a:active { background: rgba(255, 255, 255, .06); color: #fff; }
+  .pub-drawer-nav a.is-current { background: #fff; color: #003087; font-weight: 700; }
+  .pub-drawer-login {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 46px; margin: 1.25rem .75rem 0; border-radius: 10px;
+    background: #FFC53D; color: #0B2545; font-weight: 700; text-decoration: none;
+  }
+  .pub-drawer-close:focus-visible, .pub-drawer a:focus-visible { outline: 2px solid #8fb0ff; outline-offset: 2px; }
+}
+@media (max-width: 900px) and (prefers-reduced-motion: reduce) {
+  .pub-drawer, .pub-drawer-backdrop { transition: none; }
+}
+
+/* Policy pages: table of contents and text never wider than the screen */
+@media (max-width: 860px) {
+  .policy-wrap, .page-wrap, .policy-layout { grid-template-columns: minmax(0, 1fr) !important; }
+  .toc, .policy-content { max-width: 100%; min-width: 0; }
+}
+
+/* Policy bullet lists: the label and its text flow as one paragraph
+   (as flex items they were squeezed into narrow side-by-side columns) */
+.ps-list li { display: block !important; position: relative; padding-left: 1.45rem !important; overflow-wrap: break-word; }
+.ps-list li::before { position: absolute; left: 0; top: .5rem; }

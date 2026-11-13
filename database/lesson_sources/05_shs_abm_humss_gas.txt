@@ -1,0 +1,431 @@
+@ ABM-BUSMATH
+1 | Fractions, Decimals, and Percent | Business calculations often require converting between fractions, decimals, and percent.
+- To change a decimal to percent, multiply by 100.
+- To change a percent to a decimal, divide by 100.
+- Percent is used in discounts, interest, and taxes.
+? Convert 3/8 to a decimal and a percent.
+2 | Ratio and Proportion | Ratios compare quantities, and proportions show that two ratios are equal.
+- A ratio can be written as a:b or a/b.
+- Proportions solve problems like sharing profits.
+- Cross-multiplication solves for a missing term.
+? Three partners share ₱90,000 in the ratio 2:3:4. How much does each get?
+3 | Buying and Selling | Pricing involves cost, markup, markdown, and profit.
+- Selling price = cost + markup.
+- Markdown is a reduction from the original selling price.
+- Gross profit = net sales − cost of goods sold.
+? An item costs ₱400 and is sold with a 30% markup. Find the selling price.
+4 | Salaries and Wages | Employees earn income through salaries, wages, and commissions.
+- Wages are usually paid per hour or per day; salaries per month.
+- Overtime is paid at a higher rate.
+- Deductions include SSS, PhilHealth, Pag-IBIG, and withholding tax.
+? Compute the gross pay of a worker who earns ₱80 per hour for 48 hours with 8 hours overtime at 125%.
+5 | Presentation and Analysis of Business Data | Business data is organized in tables and graphs to support decisions.
+- Line graphs show trends over time.
+- Bar graphs compare categories.
+- Pie charts show parts of a whole.
+? Create a bar graph of a store's sales for one week.
+
+@ ABM-FABM1
+1 | Introduction to Accounting | Accounting is the process of recording, classifying, and summarizing financial information.
+- Users include owners, investors, lenders, and the government.
+- Branches include financial, managerial, and tax accounting.
+- Accounting helps businesses make informed decisions.
+? List three users of accounting information and what each needs to know.
+2 | The Accounting Equation | Every transaction keeps the accounting equation in balance.
+- Assets = Liabilities + Owner's Equity.
+- Assets are resources owned; liabilities are debts owed.
+- Owner's equity is the owner's claim on the assets.
+? If assets are ₱500,000 and liabilities are ₱200,000, find owner's equity.
+3 | Types of Business Organizations | Businesses are organized in different forms with different rules and risks.
+- Sole proprietorship: owned by one person.
+- Partnership: owned by two or more people.
+- Corporation: a separate legal entity owned by stockholders.
+? Compare the advantages and disadvantages of a sole proprietorship and a partnership.
+4 | The Accounting Cycle | The accounting cycle is the step-by-step process of handling business transactions.
+- Analyze transactions and record them in the journal.
+- Post entries to the ledger and prepare a trial balance.
+- Prepare financial statements and close the books.
+? Arrange the steps of the accounting cycle in order.
+5 | Journalizing Transactions | Journal entries record transactions using debits and credits.
+- Every entry has at least one debit and one credit.
+- Total debits must equal total credits.
+- Assets increase with a debit; liabilities and equity increase with a credit.
+? Journalize: the owner invested ₱100,000 cash into the business.
+
+@ ABM-FABM2
+1 | The Statement of Financial Position | The statement of financial position shows a business's assets, liabilities, and equity at a point in time.
+- It is also called the balance sheet.
+- Assets are classified as current or non-current.
+- It must always balance.
+? Prepare a simple statement of financial position from given balances.
+2 | The Statement of Comprehensive Income | This statement shows a business's income and expenses over a period.
+- Revenue minus expenses equals net income or net loss.
+- It shows how well the business performed.
+- Expenses include cost of sales and operating expenses.
+? Compute net income if revenue is ₱250,000 and expenses are ₱180,000.
+3 | Statement of Changes in Equity and Cash Flows | These statements explain changes in owner's equity and the movement of cash.
+- Equity changes through investments, withdrawals, and net income.
+- Cash flows are grouped into operating, investing, and financing activities.
+- A profitable business can still run out of cash.
+? Classify five transactions into operating, investing, or financing activities.
+4 | Financial Statement Analysis | Analysis helps users understand a business's financial health.
+- Horizontal analysis compares amounts across years.
+- Vertical analysis shows each item as a percent of a base.
+- Ratios measure liquidity, profitability, and solvency.
+? Compute the current ratio if current assets are ₱120,000 and current liabilities are ₱60,000.
+5 | Income Tax and Banking | Businesses must pay taxes and use banking services wisely.
+- The Bureau of Internal Revenue collects taxes in the Philippines.
+- Banks offer savings, checking, and loan services.
+- Keeping records helps prepare accurate tax returns.
+? List the documents a small business needs to register with the BIR.
+
+@ ABM-ORGMGT
+1 | Nature and Concept of Management | Management is the process of reaching goals through people and resources.
+- Functions of management: planning, organizing, leading, and controlling.
+- Managers work at top, middle, and lower levels.
+- Good management makes organizations efficient and effective.
+? Interview a manager about their daily tasks and classify them by function.
+2 | The Business Environment | Businesses are affected by forces inside and outside the organization.
+- The internal environment includes employees and culture.
+- The external environment includes customers, competitors, and the economy.
+- Filipino business culture values relationships and trust.
+? Identify three external factors that affect a local sari-sari store.
+3 | Planning | Planning sets goals and decides how to achieve them.
+- Strategic plans are long-term; operational plans are short-term.
+- Goals should be SMART: specific, measurable, achievable, relevant, and time-bound.
+- Planning reduces uncertainty.
+? Write a SMART goal for a student organization.
+4 | Organizing and Staffing | Organizing arranges people and tasks, and staffing fills positions with the right people.
+- An organizational chart shows roles and reporting lines.
+- Staffing includes recruitment, selection, training, and evaluation.
+- Clear roles prevent confusion.
+? Draw an organizational chart for a small business.
+5 | Leading and Controlling | Leading motivates people, and controlling checks whether goals are met.
+- Leadership styles include autocratic, democratic, and laissez-faire.
+- Motivation theories include Maslow's hierarchy of needs.
+- Controlling compares actual results to standards and corrects gaps.
+? Describe the leadership style you prefer and why.
+
+@ ABM-MARKETING
+1 | Introduction to Marketing | Marketing is the process of creating value for customers and building strong relationships.
+- Marketing focuses on customer needs and wants.
+- Good marketing creates satisfied, loyal customers.
+- Marketing includes research, product, pricing, distribution, and promotion.
+? Explain how a local brand meets the needs of its customers.
+2 | The Marketing Mix | The marketing mix is a set of tools used to reach the target market.
+- Product: what is being sold.
+- Price: how much customers pay.
+- Place and Promotion: where it is sold and how it is advertised.
+? Analyze the 4Ps of your favorite snack product.
+3 | Market Segmentation and Targeting | Segmentation divides a market into groups with similar needs.
+- Bases include geographic, demographic, psychographic, and behavioral factors.
+- Targeting chooses which segments to serve.
+- Positioning creates a clear image in the customer's mind.
+? Identify the target market of a popular fast-food chain.
+4 | Consumer Behavior | Consumer behavior studies how people decide what to buy.
+- The buying process: need recognition, information search, evaluation, purchase, and post-purchase.
+- Culture, family, and personal factors influence choices.
+- Understanding consumers helps design better offers.
+? Describe the buying process you followed in your last major purchase.
+5 | Digital Marketing | Digital marketing uses online channels to reach customers.
+- Channels include social media, websites, email, and online marketplaces.
+- Content should be useful, engaging, and consistent.
+- Results can be measured using likes, shares, clicks, and sales.
+? Plan three social media posts for a small business.
+
+@ ABM-BUSFIN
+1 | Introduction to Business Finance | Business finance is about managing money to reach business goals.
+- Financial managers decide on investing, financing, and managing assets.
+- The goal is to maximize the value of the business.
+- Good financial decisions balance risk and return.
+? List three financial decisions a small business owner makes.
+2 | Financial Planning | Financial planning sets financial goals and prepares budgets to achieve them.
+- A budget estimates income and expenses.
+- Cash budgets help avoid running out of money.
+- Plans should be reviewed and updated.
+? Prepare a one-month budget for a small food stall.
+3 | Sources of Funds | Businesses raise money from different sources.
+- Equity financing comes from owners or investors.
+- Debt financing comes from loans and credit.
+- Short-term funds pay daily needs; long-term funds pay for big assets.
+? Compare borrowing from a bank and getting money from investors.
+4 | Time Value of Money | Money today is worth more than the same amount in the future.
+- Future value grows money using interest.
+- Present value finds today's worth of future money.
+- These concepts guide investment and loan decisions.
+? Find the future value of ₱5,000 after 2 years at 6% compounded annually.
+5 | Personal Finance and Investments | Managing personal money wisely builds long-term security.
+- Save first, then spend.
+- Investments include savings accounts, bonds, stocks, and mutual funds.
+- Higher returns usually come with higher risk.
+? Create a personal savings plan for the next six months.
+
+@ ABM-BUSETHICS
+1 | Ethics in Business | Business ethics guides how companies and people behave in commerce.
+- Ethics is about right and wrong conduct.
+- Ethical businesses earn trust and long-term success.
+- Unethical acts include fraud, bribery, and false advertising.
+? Give an example of an unethical business practice and its effects.
+2 | Ethical Frameworks | Frameworks help people decide what is right.
+- Utilitarianism chooses the greatest good for the greatest number.
+- Deontology focuses on duty and rules.
+- Virtue ethics focuses on good character.
+? Apply two frameworks to a business dilemma.
+3 | Corporate Social Responsibility | CSR is a company's commitment to benefit society and the environment.
+- Examples include community programs and eco-friendly operations.
+- CSR builds brand reputation.
+- True CSR goes beyond marketing.
+? Research a Philippine company's CSR program and evaluate it.
+4 | Social Entrepreneurship | Social enterprises solve social problems through business.
+- Profits support a social mission.
+- Examples include businesses that hire marginalized workers.
+- Success is measured by both profit and impact.
+? Propose a social enterprise idea for your community.
+5 | Ethical Decision-Making in the Workplace | Workers face ethical choices every day.
+- Identify the problem and the people affected.
+- Consider options and their consequences.
+- Choose the action you can defend openly.
+? What would you do if you saw a co-worker taking company supplies?
+
+@ HUMSS-INTRO
+1 | Understanding Religion | Religion is a system of beliefs and practices related to the sacred.
+- Religion, spirituality, and philosophy are related but different.
+- Religions shape culture, laws, and values.
+- Respect for others' beliefs promotes peace.
+? Interview someone of a different faith about a belief they hold important.
+2 | Judaism, Christianity, and Islam | These three monotheistic religions trace their roots to Abraham.
+- Judaism follows the Torah and believes in one God.
+- Christianity centers on Jesus Christ and the Bible.
+- Islam follows the Qur'an and the teachings of Prophet Muhammad.
+? Compare one practice from each of the three religions.
+3 | Hinduism and Buddhism | Hinduism and Buddhism began in India and share ideas like karma and rebirth.
+- Hinduism has many gods and sacred texts like the Vedas.
+- Buddhism was founded by Siddhartha Gautama, the Buddha.
+- The Four Noble Truths explain suffering and its end.
+? Explain the meaning of karma in your own words.
+4 | Confucianism, Taoism, and Shinto | These East Asian belief systems emphasize harmony and proper relationships.
+- Confucianism stresses respect, family, and moral leadership.
+- Taoism teaches living in harmony with the Tao, or "the Way."
+- Shinto honors kami, or spirits, in nature.
+? How do Confucian values appear in Filipino families?
+5 | Religion in the Modern World | Religions continue to shape societies today.
+- Religious diversity calls for tolerance and dialogue.
+- Some conflicts are linked to religion, but so are many peace efforts.
+- New religious movements also appear.
+? Propose a school activity that promotes interfaith understanding.
+
+@ HUMSS-DISAS
+1 | The Social Sciences | The social sciences study human behavior and society.
+- Disciplines include anthropology, economics, geography, history, political science, psychology, and sociology.
+- Each discipline asks different questions about people.
+- They help us understand and improve society.
+? Choose one social problem and explain how two disciplines would study it.
+2 | Structural-Functionalism | Structural-functionalism sees society as parts working together for stability.
+- Each institution, like family and school, has a function.
+- Problems arise when parts fail to work.
+- Émile Durkheim is a key thinker of this view.
+? Explain the function of schools in society.
+3 | Marxism | Marxism looks at society through class struggle and economic inequality.
+- Karl Marx described conflict between owners and workers.
+- Economic systems shape other parts of society.
+- It has influenced labor movements and politics.
+? Identify an example of economic inequality in your community.
+4 | Symbolic Interactionism | Symbolic interactionism studies how people create meaning through everyday interaction.
+- Symbols like language and gestures shape behavior.
+- Identity is formed through how others see us.
+- George Herbert Mead is a key thinker.
+? Describe how a simple gesture can mean different things to different people.
+5 | Filipino Thinkers in the Social Sciences | Filipino scholars have developed ideas that reflect Philippine experience.
+- Virgilio Enriquez developed Sikolohiyang Pilipino.
+- Renato Constantino wrote about colonial mentality.
+- Their work helps us understand Filipino identity.
+? Explain the concept of "kapwa" in Sikolohiyang Pilipino.
+
+@ HUMSS-PPG
+1 | Politics and Governance | Politics is how power is gained and used, and governance is how a society is managed.
+- Power, authority, and legitimacy are key concepts.
+- Good governance is transparent, accountable, and participatory.
+- Citizens play an active role in politics.
+? Give an example of good governance in your local government.
+2 | Political Ideologies | Ideologies are sets of beliefs about how society should be organized.
+- Liberalism values individual freedom.
+- Socialism values equality and shared ownership.
+- Conservatism values tradition and stability.
+? Identify an ideology reflected in a current government policy.
+3 | The Philippine Government | The Philippines is a democratic and republican state with three branches of government.
+- The executive branch is led by the President.
+- The legislative branch is Congress: the Senate and the House of Representatives.
+- The judiciary is headed by the Supreme Court.
+? Explain the system of checks and balances among the three branches.
+4 | Local Government | Local government units bring public services closer to the people.
+- LGUs include provinces, cities, municipalities, and barangays.
+- The Local Government Code of 1991 gave LGUs more power.
+- The barangay is the smallest political unit.
+? Interview a barangay official about the services they provide.
+5 | Civil Society and Citizenship | Civil society groups and active citizens strengthen democracy.
+- Civil society includes NGOs, cooperatives, and people's organizations.
+- Voting is a right and a responsibility.
+- Citizens can join consultations and volunteer programs.
+? Plan a voter education activity for first-time voters.
+
+@ HUMSS-CNF
+1 | Introduction to Creative Nonfiction | Creative nonfiction tells true stories using literary techniques.
+- It must be factual and honest.
+- It uses scenes, dialogue, and imagery like fiction.
+- Forms include memoir, personal essay, and literary journalism.
+? Read a personal essay and identify the literary techniques used.
+2 | The Personal Essay | A personal essay reflects on an experience and what it means.
+- It is written in the first person.
+- It combines storytelling and reflection.
+- A good essay connects personal experience to a larger idea.
+? Write a personal essay about a place that shaped you.
+3 | Memoir and Biography | Memoirs and biographies tell the stories of real lives.
+- A memoir focuses on a specific part of the writer's own life.
+- A biography tells the story of another person's life.
+- Research and interviews add accuracy.
+? Interview an elder and write a short biographical sketch.
+4 | Travel Writing | Travel writing describes places and experiences on a journey.
+- It captures sights, sounds, people, and culture.
+- Good travel writing shows the writer's discovery.
+- Respect the people and places you write about.
+? Write a travel piece about a trip within your province.
+5 | Literary Journalism | Literary journalism reports real events with the style of storytelling.
+- It is based on careful research and interviews.
+- It uses scenes and characters to engage readers.
+- Accuracy and ethics are essential.
+? Write a feature story about a hardworking person in your community.
+
+@ HUMSS-TNCT
+1 | Understanding Trends | A trend is a pattern of change that develops over time.
+- Trends differ from fads, which are short-lived.
+- Identify trends by looking at data over time.
+- Trends can be social, technological, or environmental.
+? List three current trends among young people and explain whether each is a trend or a fad.
+2 | Strategic Analysis and Intuitive Thinking | Critical thinking combines careful analysis with intuition.
+- Strategic analysis breaks a problem into parts.
+- Intuitive thinking uses experience and insight.
+- Both are needed to solve complex problems.
+? Analyze a school problem using both strategic and intuitive thinking.
+3 | Networks | A network is a set of connected people, places, or systems.
+- Social networks shape how information spreads.
+- Networks can help or harm, depending on how they are used.
+- Strong networks support communities in crisis.
+? Draw a map of your personal support network.
+4 | Global Networks and Technology | Technology connects the world in fast-changing networks.
+- Information and communication technology speeds up global exchange.
+- Benefits include learning and opportunity; risks include fake news and privacy loss.
+- Responsible use is everyone's duty.
+? Evaluate a viral post and check whether its information is accurate.
+5 | Democratic Interventions | Democratic interventions are ways people work together to improve society.
+- Participation, deliberation, and voting are democratic tools.
+- Communities can propose solutions to local issues.
+- Inclusive decisions consider all voices.
+? Propose a democratic way to solve a problem in your school.
+
+@ HUMSS-APPSOCSCI
+1 | Applying the Social Sciences | The social sciences provide tools to solve real problems in society.
+- Counseling, social work, and communication are applied fields.
+- Professionals use theory to guide practice.
+- They work in schools, hospitals, and communities.
+? Identify a professional in your community who applies social science knowledge.
+2 | Counseling | Counseling helps people understand and solve personal problems.
+- Counselors listen, guide, and support clients.
+- Core values include respect, confidentiality, and empathy.
+- Guidance offices in schools provide counseling services.
+? List the services offered by your school's guidance office.
+3 | Social Work | Social work helps individuals, families, and communities improve their well-being.
+- Social workers serve vulnerable groups like children and the elderly.
+- They connect people to resources and services.
+- The DSWD leads social welfare programs in the Philippines.
+? Research a DSWD program and explain who it helps.
+4 | Communication as an Applied Social Science | Communication professionals inform, educate, and influence the public.
+- Fields include journalism, public relations, and development communication.
+- Ethical communication is truthful and responsible.
+- Media literacy helps the public judge information.
+? Create a public service announcement on a social issue.
+5 | Ethics in Applied Social Sciences | Professionals in applied social sciences follow strict ethical standards.
+- Respect the dignity and rights of clients.
+- Keep information confidential.
+- Avoid conflicts of interest.
+? Explain why confidentiality is important in counseling.
+
+@ HUMSS-CESC
+1 | Understanding Community | A community is a group of people who share a place, interests, or identity.
+- Communities can be geographic or based on shared interests.
+- Every community has strengths and needs.
+- Knowing a community is the first step to helping it.
+? Describe your community's strengths and needs.
+2 | Community Action | Community action is when people work together to bring change.
+- It can be through volunteering, advocacy, or organizing.
+- Participation should be voluntary and inclusive.
+- Small actions can lead to big changes.
+? List three community action projects that students can join.
+3 | Solidarity and Citizenship | Solidarity means standing together for the common good.
+- Citizenship includes rights and responsibilities.
+- Filipino values like bayanihan show solidarity.
+- Active citizens care about people beyond their own family.
+? Give an example of bayanihan you have seen in your community.
+4 | Planning a Community Project | A good community project is planned with the community, not just for it.
+- Identify the need through surveys or interviews.
+- Set goals, tasks, timeline, and budget.
+- Involve community members in planning and doing the project.
+? Draft a plan for a small community project.
+5 | Evaluating Community Engagement | Evaluation shows whether a project made a difference.
+- Gather feedback from participants and the community.
+- Compare results with the original goals.
+- Use lessons learned to improve future projects.
+? Create a short feedback form for a community project.
+
+@ GAS-HUMANITIES
+1 | Introduction to the Humanities | The humanities study human culture, expression, and values.
+- Disciplines include art, literature, music, philosophy, and history.
+- They help us understand what it means to be human.
+- They develop critical thinking and empathy.
+? Choose an artwork and explain what it says about human experience.
+2 | Art Appreciation | Art appreciation is the ability to understand and value works of art.
+- Elements of art include line, shape, color, texture, and space.
+- Principles include balance, contrast, and unity.
+- Context helps us understand an artwork's meaning.
+? Analyze a painting using the elements of art.
+3 | Philippine Arts | Philippine arts reflect the history and identity of the Filipino people.
+- National Artists include Fernando Amorsolo, Lucio San Pedro, and Lino Brocka.
+- Indigenous arts include weaving, carving, and dance.
+- Contemporary Filipino artists explore modern issues.
+? Research a National Artist and present one of their works.
+4 | Introduction to Philosophy | Philosophy is the love of wisdom and the search for answers to life's big questions.
+- It asks about knowledge, truth, reality, and ethics.
+- Philosophers include Socrates, Plato, and Aristotle.
+- Philosophy teaches us to reason clearly.
+? Write your answer to the question "What makes a good life?"
+5 | The Human Person | Philosophy studies the human person as a being with body, mind, and freedom.
+- Humans are embodied spirits.
+- Freedom comes with responsibility.
+- Humans live in relation to others and the environment.
+? Reflect on a decision that showed both your freedom and your responsibility.
+
+@ GAS-SOCIALSCI
+1 | Introduction to the Social Sciences | The social sciences study how people live and interact in society.
+- They include sociology, anthropology, psychology, economics, and political science.
+- They use research methods to understand social behavior.
+- They help address social issues.
+? List the social science disciplines and one question each would ask about poverty.
+2 | Culture and Society | Culture is the shared way of life of a group of people.
+- Culture includes beliefs, values, norms, language, and material objects.
+- Ethnocentrism judges other cultures by one's own standards.
+- Cultural relativism understands cultures on their own terms.
+? Give an example of ethnocentrism and how to avoid it.
+3 | Socialization and Identity | Socialization is the process of learning how to live in society.
+- Agents of socialization include family, school, peers, and media.
+- Identity develops through socialization.
+- Socialization continues throughout life.
+? Identify which agent of socialization has influenced you the most.
+4 | Social Institutions | Social institutions are organized systems that meet society's needs.
+- Major institutions include family, education, religion, economy, and government.
+- Institutions shape behavior and expectations.
+- Institutions change over time.
+? Describe how the institution of education has changed in your lifetime.
+5 | Social Change and Issues | Society changes over time because of technology, population, and ideas.
+- Social movements push for change.
+- Change can bring both progress and new problems.
+- Understanding change helps citizens respond wisely.
+? Identify a social change in the Philippines in the last ten years and its effects.

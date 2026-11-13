@@ -1,0 +1,162 @@
+/* ============================================================
+   Arandia College eLMS — Motion system (one place for all animation)
+   File: assets/css/elms-motion.css
+   Loaded LAST on every Admin / Teacher / Student / Admission page
+   (after elms-ui.css and elms-responsive.css). Behaviour: assets/js/elms-motion.js
+
+   Rules of this file
+   · Only opacity, transform, colours and shadows are animated (no layout properties).
+   · Timings are tokens below — change them here, they apply everywhere.
+   · Nothing ever delays an action: pages and dialogs are usable from the first frame.
+   · prefers-reduced-motion removes movement; spinners keep turning (they carry meaning).
+   · :where() keeps specificity at zero, so a page's own more specific rule still wins.
+   ============================================================ */
+
+:root {
+  /* Easing */
+  --m-ease-out: cubic-bezier(.22, .7, .25, 1);   /* things entering */
+  --m-ease: cubic-bezier(.4, 0, .2, 1);          /* things changing state / leaving */
+
+  /* Durations (guidelines, never added as a wait before an action) */
+  --m-fast:  140ms;   /* hover / press / focus / micro-interactions   (120–180) */
+  --m-pop:   170ms;   /* dropdowns, popovers, search results          (150–200) */
+  --m-modal: 210ms;   /* dialogs                                      (180–240) */
+  --m-page:  200ms;   /* page content + tab panels                    (180–250) */
+  --m-nav:   240ms;   /* sidebar / drawer                             (180–250) */
+}
+
+/* ── 1. Controls: immediate, calm feedback ───────────────────── */
+.elms-app :where(button, .btn, input[type="submit"], input[type="button"], .btn-icon,
+                 .tb-icon-btn, .tb-profile, .notif-btn, .tb-dd-item, .sidebar-link,
+                 .nav-link, .acc-head, .stu-head, summary) {
+  transition-property: background-color, border-color, color, box-shadow, opacity;
+  transition-duration: var(--m-fast);
+  transition-timing-function: var(--m-ease);
+}
+
+/* Pressed: a quick dip in opacity — no scaling, nothing moves */
+.elms-app :where(button, .btn, input[type="submit"], .btn-icon):active:not(:disabled):not([aria-disabled="true"]) {
+  opacity: .86;
+  transition-duration: 60ms;
+}
+
+/* Keyboard focus: visible on every control, only for keyboard users */
+.elms-app :where(a[href], button, [role="button"], [role="switch"], summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--ui-link, #2563eb);
+  outline-offset: 2px;
+}
+.elms-app :where(.sidebar-link, .nav-link):focus-visible { outline-offset: -2px; }
+
+/* Disabled / busy */
+.elms-app :where(button, .btn, input[type="submit"])[disabled],
+.elms-app :where([aria-disabled="true"]) { cursor: not-allowed; }
+.elms-app :where([aria-disabled="true"]) { pointer-events: none; }
+
+/* Set by elms-motion.js while a form is being sent (second click is ignored) */
+.elms-app .is-busy, .elms-app [aria-busy="true"].btn, .elms-app button[aria-busy="true"] {
+  cursor: progress;
+  opacity: .72;
+}
+.elms-app .is-busy.btn::after, .elms-app button.is-busy::after {
+  content: "";
+  display: inline-block;
+  width: 11px; height: 11px;
+  margin-left: .5rem;
+  vertical-align: -1px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  animation: m-spin .7s linear infinite;
+}
+@keyframes m-spin { to { transform: rotate(360deg); } }
+
+/* Clickable cards / rows: colour and shadow only */
+.elms-app :where(.stat-card, .qty-card, .class-card, .subject-card, .quick-card, .card.is-link, a.card) {
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: var(--m-fast);
+  transition-timing-function: var(--m-ease);
+}
+
+/* Form fields: border / ring change smoothly */
+.elms-app :where(input, select, textarea):not([type="checkbox"]):not([type="radio"]) {
+  transition-property: border-color, box-shadow, background-color;
+  transition-duration: var(--m-fast);
+  transition-timing-function: var(--m-ease);
+}
+
+/* ── 2. Page content: short fade, no movement, no layout shift ── */
+@keyframes m-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes m-rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes m-drop { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@keyframes m-pop  { from { opacity: 0; transform: translateY(8px) scale(.985); } to { opacity: 1; transform: none; } }
+
+/* `backwards` = animates in, leaves no lasting opacity / stacking context behind */
+.elms-app .app-body > main,
+.elms-app .app-body > .main-content,
+.elms-app main.main-content {
+  animation: m-fade var(--m-page) var(--m-ease-out) backwards;
+}
+
+/* Tabs / sections swapped in place */
+.elms-app .section-panel.active,
+.elms-app .tab-panel.active,
+.elms-app .tab-content.active {
+  animation: m-fade var(--m-page) var(--m-ease-out) backwards;
+}
+
+/* Accordions that open by toggling a class */
+.elms-app .acc-body.open,
+.elms-app .stu-body.open {
+  animation: m-fade var(--m-pop) var(--m-ease-out) backwards;
+}
+
+/* ── 3. Dropdowns & popovers ─────────────────────────────────── */
+.elms-app .tb-dd.show,
+.elms-app .notif-dropdown.open,
+.elms-app .tt-results.show,
+.elms-app .st-results.show {
+  transform-origin: top right;
+  animation: m-drop var(--m-pop) var(--m-ease-out) backwards;
+}
+/* Student bell / account menu are shown by switching display */
+.elms-app .notif-panel { transform-origin: top right; animation: m-drop var(--m-pop) var(--m-ease-out) backwards; }
+
+/* ── 4. Modals: soft fade, small rise ────────────────────────── */
+.elms-app .modal-overlay.show,
+.elms-app .modal-overlay:not(.hidden):not([hidden]) {
+  animation: m-fade var(--m-modal) var(--m-ease-out) backwards;
+}
+.elms-app .modal-overlay.show > .modal,
+.elms-app .modal-overlay:not(.hidden):not([hidden]) > .modal {
+  animation: m-pop var(--m-modal) var(--m-ease-out) backwards;
+}
+/* Page behind an open dialog does not scroll (see elms-motion.js) */
+html.m-modal-open { overflow: hidden; }
+
+/* ── 5. Sidebar / drawer ─────────────────────────────────────
+   The drawer itself lives in elms-responsive.css (transform + opacity only,
+   .24s with --nav-ease). Nothing to add here. */
+
+/* ── 6. Progress bars: transform-friendly, short ─────────────── */
+.elms-app :where(.sa-fill, .sg-bar > span, .progress-bar > span, .db-bar > span) {
+  transition-duration: var(--m-page);
+  transition-timing-function: var(--m-ease-out);
+}
+
+/* ── 7. Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  :root { --m-fast: 1ms; --m-pop: 1ms; --m-modal: 1ms; --m-page: 1ms; --m-nav: 1ms; }
+  html { scroll-behavior: auto !important; }
+  .elms-app *, .elms-app *::before, .elms-app *::after {
+    transition-duration: 1ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .elms-app *:not([class*="spin"]):not(.btn-spinner):not(.is-busy)::before,
+  .elms-app *:not([class*="spin"]):not(.btn-spinner):not(.is-busy)::after,
+  .elms-app *:not([class*="spin"]):not(.btn-spinner):not(.is-busy) {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,189 @@
+@ HS7-FIL fil
+# Kuwentong-bayan | Mga salaysay na nagpasalin-salin sa bibig ng mga tao.
+> Bago pa magkaroon ng aklat, ikinukuwento na ng ating mga ninuno ang mga salaysay tungkol sa kanilang buhay at paniniwala.
+= Kuwentong-bayan :: salaysay na nagmula sa isang pook at nagpasalin-salin sa bibig ng mga tao.
+= Tauhan :: karaniwang tao, hayop, o nilalang na may kapangyarihan.
+= Aral :: ang mabuting asal o pagpapahalagang itinuturo ng kuwento.
+= Kultura :: ang pamumuhay, paniniwala, at kaugalian ng isang pangkat ng tao.
+! Halimbawa :: Sa kuwentong "Si Juan Tamad," ipinapakita ang masamang dulot ng katamaran. Ang aral: kailangan ang sipag upang makamit ang gusto.
+? Ano ang kuwentong-bayan? :: Salaysay na nagpasalin-salin sa bibig ng mga tao sa isang pook.
+? Ano ang aral ng "Si Juan Tamad"? :: Masama ang katamaran; kailangan ang sipag.
+? Bakit mahalaga ang kuwentong-bayan? :: Ipinapakita nito ang kultura at paniniwala ng ating mga ninuno.
+
+# Pabula at Alamat | Dalawang anyo ng kuwentong nagtuturo ng aral.
+> Ang pabula at alamat ay parehong maiikling kuwento, ngunit magkaiba ang kanilang tauhan at layunin.
+= Pabula :: kuwentong hayop ang mga tauhan na kumikilos at nagsasalita na parang tao, at may aral.
+= Alamat :: kuwentong nagsasalaysay ng pinagmulan ng isang bagay, lugar, o pangalan.
+= Moral :: ang aral na nais iparating ng kuwento.
+! Halimbawa ng pabula :: "Ang Pagong at ang Matsing" – nilamangan ng matsing ang pagong, ngunit sa huli ay ang pagong ang nagwagi. Aral: huwag maging sakim at mapanlamang.
+! Halimbawa ng alamat :: "Alamat ng Pinya" – ipinapaliwanag kung bakit maraming "mata" ang pinya, mula sa batang si Pina na hindi makakita ng mga bagay.
+? Ano ang pagkakaiba ng pabula at alamat? :: Hayop ang tauhan sa pabula; ang alamat ay nagsasalaysay ng pinagmulan ng isang bagay.
+? Anong tanong ang sinasagot ng alamat? :: "Paano o saan ito nagmula?"
+? Magbigay ng isang halimbawa ng alamat. :: Alamat ng Pinya (o iba pang tamang halimbawa)
+
+@ HS7-ENGLISH
+# Philippine Folk Literature | Stories, sayings, and songs passed down by our ancestors.
+> Long before books, Filipinos shared stories and wisdom by word of mouth. These works are called folk literature.
+= Folk literature :: stories, songs, and sayings passed down orally from one generation to the next.
+= Myth :: a story about gods and the creation of the world or nature.
+= Legend :: a story that explains the origin of a place, thing, or name.
+= Folk tale :: a simple story with ordinary people or animals that teaches a lesson.
+! Example :: The legend of Maria Makiling tells of a kind spirit who protects Mount Makiling in Laguna and its people.
+? What is folk literature? :: Stories, songs, and sayings passed down orally.
+? What kind of story explains the origin of a place? :: A legend
+? How is a myth different from a folk tale? :: A myth is about gods and creation; a folk tale is about ordinary people or animals.
+
+# Parts of Speech | The eight kinds of words and the job each one does.
+> Every word in a sentence has a job. Knowing these jobs helps you speak and write correctly.
+= Noun :: names a person, place, thing, or idea (teacher, Manila, book).
+= Pronoun :: takes the place of a noun (he, she, it, they).
+= Verb :: shows action or state of being (run, is).
+= Adjective :: describes a noun (tall, blue).
+= Adverb :: describes a verb, adjective, or another adverb (quickly, very).
+= Preposition, conjunction, interjection :: show relationships (on, under), join words (and, but), and express feeling (Wow!).
+! Example :: "Wow, the tall boy quickly ran to the gate." – Wow (interjection), tall (adjective), boy (noun), quickly (adverb), ran (verb), to (preposition), gate (noun).
+? What part of speech is "happy" in "She is happy"? :: Adjective
+? What part of speech replaces a noun? :: Pronoun
+? Give an example of a conjunction. :: Any one: and, but, or, so
+
+@ HS7-MATH
+# Sets | Collections of objects and the basic operations on them.
+> We group things every day: school supplies, classmates, favorite foods. In math, these groups are called sets.
+= Set :: a well-defined collection of objects.
+= Element :: an object that belongs to a set, written with the symbol ∈.
+= Empty set :: a set with no elements, written { } or ∅.
+= Union (A ∪ B) :: all elements that are in A, in B, or in both.
+= Intersection (A ∩ B) :: only the elements that are in both A and B.
+! Example :: A = {1, 2, 3, 4} and B = {3, 4, 5}. A ∪ B = {1, 2, 3, 4, 5}. A ∩ B = {3, 4}.
+? What is an element? :: An object that belongs to a set.
+? If A = {a, b, c} and B = {b, c, d}, what is A ∩ B? :: {b, c}
+? What is the union of {1, 2} and {2, 3}? :: {1, 2, 3}
+
+# Integers | Positive and negative whole numbers and how to add and subtract them.
+> Temperatures below zero, floors below ground, and money owed are all examples of negative numbers.
+= Integers :: whole numbers and their negatives: …, −2, −1, 0, 1, 2, …
+= Positive integer :: a number greater than zero.
+= Negative integer :: a number less than zero.
+= Absolute value :: the distance of a number from zero; |−5| = 5.
+* Same signs: add and keep the sign. Different signs: subtract the absolute values and use the sign of the larger one. For multiplication and division, same signs give positive; different signs give negative.
+! Example :: (−7) + (−3) = −10. (−7) + 3 = −4. (−4) × (−5) = 20. 12 ÷ (−3) = −4.
+? What is |−9|? :: 9
+? Solve: (−6) + 10 :: 4
+? Solve: (−3) × 8 :: −24
+
+@ HS7-SCI
+# The Scientific Method | The step-by-step way scientists answer questions.
+> Scientists do not guess; they test their ideas carefully. The steps they follow are called the scientific method.
+= Observation :: noticing something using the senses.
+= Hypothesis :: an educated guess that can be tested.
+= Experiment :: a test done to check if the hypothesis is correct.
+= Variable :: a factor that can change in an experiment.
+= Conclusion :: the answer based on the results.
+! Example :: Question: Do plants grow taller with sunlight? Hypothesis: Plants in sunlight grow taller. Experiment: Put one plant in sunlight and one in the dark, water both equally, and measure them for two weeks.
+? What is a hypothesis? :: An educated guess that can be tested.
+? Why should only one variable be changed in an experiment? :: So you know what caused the result.
+? What comes after the experiment? :: Analyzing results and making a conclusion.
+
+# Solutions | Mixtures where one substance dissolves evenly in another.
+> When you stir sugar into water, the sugar seems to disappear. It has formed a solution.
+= Solution :: a uniform mixture of two or more substances.
+= Solute :: the substance that is dissolved (e.g., sugar).
+= Solvent :: the substance that does the dissolving (e.g., water).
+= Concentrated solution :: has a lot of solute.
+= Dilute solution :: has only a little solute.
+! Example :: In saltwater, salt is the solute and water is the solvent. Water is called the universal solvent because it can dissolve many substances.
+? In sugar water, which is the solute? :: Sugar
+? Why is water called the universal solvent? :: It can dissolve many substances.
+? Give one way to make a solute dissolve faster. :: Any one: stir it, heat the solvent, crush the solute
+
+@ HS7-AP fil
+# Heograpiya ng Asya | Ang lokasyon, laki, at mga rehiyon ng kontinenteng Asya.
+> Ang Asya ang ating kontinente. Mahalagang malaman ang katangian nito upang maunawaan ang ating sariling bansa.
+= Heograpiya :: pag-aaral ng katangiang pisikal ng daigdig at ng ugnayan nito sa tao.
+= Kontinente :: malaking masa ng lupa; ang Asya ang pinakamalaki sa pito.
+= Rehiyon :: bahagi ng isang lugar na may magkakatulad na katangian.
+= Anyong-lupa :: hugis ng lupa gaya ng bundok, kapatagan, at talampas.
+! Limang rehiyon ng Asya :: Hilagang Asya, Kanlurang Asya, Timog Asya, Silangang Asya, at Timog-Silangang Asya. Ang Pilipinas ay nasa Timog-Silangang Asya.
+? Ano ang pinakamalaking kontinente? :: Asya
+? Saang rehiyon ng Asya matatagpuan ang Pilipinas? :: Timog-Silangang Asya
+? Ano ang heograpiya? :: Pag-aaral ng katangiang pisikal ng daigdig at ugnayan nito sa tao.
+
+# Likas na Yaman ng Asya | Ang mga yamang galing sa kalikasan at ang wastong paggamit nito.
+> Mula sa palay hanggang langis, mayaman ang Asya sa likas na yaman na pinagkukunan ng kabuhayan.
+= Likas na yaman :: mga bagay mula sa kalikasan na ginagamit ng tao.
+= Yamang-lupa :: lupang taniman, kagubatan, at mineral.
+= Yamang-tubig :: isda, perlas, at iba pang galing sa dagat at ilog.
+= Konserbasyon :: matalinong paggamit at pag-iingat sa likas na yaman.
+! Halimbawa :: Ang Kanlurang Asya ay mayaman sa langis. Ang Timog-Silangang Asya, kasama ang Pilipinas, ay mayaman sa palay at yamang-dagat.
+? Ano ang likas na yaman? :: Mga bagay mula sa kalikasan na ginagamit ng tao.
+? Anong rehiyon ang mayaman sa langis? :: Kanlurang Asya
+? Ano ang konserbasyon? :: Matalinong paggamit at pag-iingat sa likas na yaman.
+
+@ HS7-ESP fil
+# Pagkilala sa Sarili | Ang pag-unawa sa sariling katangian at mga pagbabago sa pagdadalaga at pagbibinata.
+> Ang pagkilala sa sarili ang unang hakbang upang lumago bilang mabuting tao.
+= Pagkilala sa sarili :: pag-alam sa sariling kalakasan, kahinaan, at damdamin.
+= Kalakasan :: mga bagay na mahusay mong ginagawa.
+= Kahinaan :: mga bagay na kailangan mo pang paunlarin.
+= Pagdadalaga at pagbibinata :: yugto ng paglaki na may pagbabago sa katawan, isip, at damdamin.
+! Halimbawa :: Alam ni Leo na magaling siyang gumuhit (kalakasan) ngunit nahihiya siyang magsalita sa harap ng klase (kahinaan). Sumali siya sa art club at unti-unting nagsanay magsalita.
+? Ano ang pagkilala sa sarili? :: Pag-alam sa sariling kalakasan, kahinaan, at damdamin.
+? Normal ba ang mga pagbabago sa pagdadalaga at pagbibinata? :: Oo, bahagi ito ng paglaki.
+? Magbigay ng isang paraan upang paunlarin ang kahinaan. :: Halimbawa: pagsasanay, paghingi ng tulong, pagsali sa gawain
+
+# Talento at Kakayahan | Ang likas na galing at ang galing na nalilinang sa pagsasanay.
+> Bawat tao ay may natatanging galing. Ang hamon ay tuklasin at paunlarin ito.
+= Talento :: likas na galing o regalo, gaya ng pagkanta o pagguhit.
+= Kakayahan :: galing na natutunan at napaunlad sa pagsasanay.
+= Tiwala sa sarili :: paniniwala na kaya mong gawin ang isang bagay.
+! Halimbawa :: Likas na maganda ang boses ni Mia (talento). Nag-ensayo siya araw-araw kaya natuto siyang tumugtog ng gitara (kakayahan).
+? Ano ang pagkakaiba ng talento at kakayahan? :: Ang talento ay likas; ang kakayahan ay natutunan sa pagsasanay.
+? Bakit mahalaga ang tiwala sa sarili? :: Tumutulong ito upang subukan at paunlarin ang ating galing.
+? Paano magagamit ang talento sa kapwa? :: Halimbawa: pagtuturo, pagtulong sa proyekto ng paaralan
+
+@ HS7-MAPEH
+# Music of the Philippine Lowlands | Folk songs and instruments of lowland Filipino communities.
+> The lowlands of Luzon and the Visayas have music shaped by native, Spanish, and folk traditions.
+= Folk song :: a simple traditional song about daily life, work, or love.
+= Rondalla :: a group that plays plucked string instruments like the bandurria and guitar.
+= Kundiman :: a Filipino love song, usually slow and emotional.
+= Meter :: the pattern of beats in music, such as 2/4 or 3/4.
+! Example :: "Bahay Kubo" is a folk song that lists vegetables around a nipa hut. "Leron Leron Sinta" describes climbing a papaya tree.
+? What is a rondalla? :: A group that plays plucked string instruments.
+? What kind of song is a kundiman? :: A Filipino love song.
+? Give one Filipino folk song. :: Any one: Bahay Kubo, Leron Leron Sinta, Paru-parong Bukid
+
+# Arts and Crafts of the Philippine Lowlands | Traditional crafts made from local materials.
+> Lowland Filipinos turned materials like clay, wood, and fibers into useful and beautiful objects.
+= Weaving :: making cloth or mats by crossing threads or strips.
+= Pottery :: shaping clay into jars and pots, then hardening it with heat.
+= Wood carving :: shaping wood into figures and designs.
+= Pattern :: a design that repeats.
+! Example :: Paete, Laguna is known for wood carving. Vigan, Ilocos Sur is known for burnay, its brown clay jars.
+? What is pottery? :: Shaping clay into jars or pots and hardening it with heat.
+? What town is known for wood carving? :: Paete, Laguna
+? What is a pattern? :: A design that repeats.
+
+@ HS7-TLE
+# Introduction to TLE | What Technology and Livelihood Education covers.
+> TLE teaches practical skills you can use at home, in business, and in future jobs.
+= TLE :: Technology and Livelihood Education, a subject that teaches practical and work skills.
+= Home Economics :: skills like cooking, sewing, and caregiving.
+= Industrial Arts :: skills like carpentry, electricity, and plumbing.
+= ICT :: Information and Communications Technology, such as computer skills.
+= Agri-Fishery Arts :: skills in farming, gardening, and fishing.
+! Example :: A student who learns cooking in Home Economics can later open a small food business.
+? What does TLE stand for? :: Technology and Livelihood Education
+? Which TLE area teaches carpentry? :: Industrial Arts
+? Give one skill taught in Home Economics. :: Any one: cooking, sewing, caregiving
+
+# Workplace Safety | Basic rules to prevent accidents while working.
+> Accidents can happen when we are careless. Following safety rules protects you and others.
+= Hazard :: anything that can cause harm, like a sharp tool or a wet floor.
+= PPE :: Personal Protective Equipment, like gloves, goggles, and aprons.
+= First aid kit :: a box of supplies for treating minor injuries.
+= Safety rule :: a guide that helps prevent accidents.
+! Example :: Before using a knife in cooking class, a student wears an apron, keeps the area dry, and cuts away from the body.
+? What is a hazard? :: Anything that can cause harm.
+? What does PPE stand for? :: Personal Protective Equipment
+? Give one safety rule in the TLE room. :: Any one: wear PPE, keep the area clean, use tools properly

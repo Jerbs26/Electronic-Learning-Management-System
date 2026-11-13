@@ -1,0 +1,512 @@
+@ SHS-GENMATH
+1 | Functions and Their Graphs | A function is a relation in which each input has exactly one output.
+- Functions can be shown as equations, tables, graphs, or mapping diagrams.
+- The vertical line test checks whether a graph is a function.
+- Function notation f(x) means "the value of f at x."
+? Evaluate f(x) = 2x² − 3x + 1 when x = 4.
+2 | Rational Functions | A rational function is a ratio of two polynomial functions.
+- Vertical asymptotes occur where the denominator equals zero.
+- Horizontal asymptotes describe the graph's behavior for very large x.
+- Rational functions model rates, averages, and work problems.
+? Find the vertical asymptote of f(x) = (x + 1) / (x − 3).
+3 | Exponential and Logarithmic Functions | Exponential functions model rapid growth or decay, and logarithms are their inverses.
+- Exponential form: f(x) = a · bˣ.
+- Logarithmic form: log_b(y) = x means bˣ = y.
+- These functions model population growth, interest, and radioactive decay.
+? Solve 2ˣ = 32 and rewrite it in logarithmic form.
+4 | Simple and Compound Interest | Interest is the cost of borrowing money or the earnings from saving it.
+- Simple interest: I = Prt.
+- Compound interest earns interest on both the principal and past interest.
+- Compound amount: A = P(1 + r/n)ⁿᵗ.
+? How much is ₱10,000 worth after 3 years at 5% interest compounded annually?
+5 | Logic | Logic is the study of correct reasoning using statements called propositions.
+- A proposition is a statement that is either true or false.
+- Logical connectives include and, or, not, and if-then.
+- Truth tables show all possible truth values of a compound proposition.
+? Build a truth table for "p and q."
+
+@ SHS-STATS
+1 | Random Variables | A random variable assigns a number to each outcome of a random experiment.
+- Discrete random variables have countable values, like the number of heads.
+- Continuous random variables can take any value in a range, like height.
+- A probability distribution lists each value and its probability.
+? Make a probability distribution for the number of heads when tossing two coins.
+2 | The Normal Distribution | The normal distribution is a bell-shaped curve that describes many natural measurements.
+- It is symmetric around the mean.
+- About 68% of data falls within one standard deviation of the mean.
+- The z-score shows how many standard deviations a value is from the mean.
+? A test has mean 75 and standard deviation 5. Find the z-score of a score of 85.
+3 | Sampling and Sampling Distributions | A sample is a smaller group chosen to represent a larger population.
+- Random sampling gives every member an equal chance to be chosen.
+- Types include simple random, stratified, systematic, and cluster sampling.
+- Larger samples usually give more reliable results.
+? Describe how you would choose a random sample of 30 students from your school.
+4 | Estimation of Parameters | Estimation uses sample data to make educated guesses about a population.
+- A point estimate is a single value, like the sample mean.
+- A confidence interval gives a range likely to contain the true value.
+- Higher confidence levels give wider intervals.
+? Explain what a 95% confidence interval means in your own words.
+5 | Hypothesis Testing | Hypothesis testing uses data to decide whether to reject a claim about a population.
+- The null hypothesis states no effect or no difference.
+- The alternative hypothesis states what we want to prove.
+- If the p-value is less than the significance level, we reject the null hypothesis.
+? Write a null and alternative hypothesis for testing whether a new study method improves scores.
+
+@ SHS-EARTH
+1 | The Earth as a Planet | Earth is the only known planet with conditions that support life.
+- Earth is the right distance from the Sun to have liquid water.
+- Its atmosphere protects life and regulates temperature.
+- Earth has four subsystems: geosphere, hydrosphere, atmosphere, and biosphere.
+? Explain how two of Earth's subsystems interact.
+2 | Minerals and Rocks | Rocks are made of minerals and are classified by how they form.
+- Igneous rocks form from cooled magma or lava.
+- Sedimentary rocks form from compressed sediments.
+- Metamorphic rocks form when heat and pressure change existing rocks.
+? Describe the rock cycle using a simple diagram.
+3 | Geologic Processes and Hazards | Processes inside and on the surface of the Earth shape the land and can cause hazards.
+- Weathering and erosion break down and move rocks.
+- Earthquakes, landslides, and volcanic eruptions are geologic hazards.
+- Hazard maps help communities prepare.
+? Identify the geologic hazards that affect your municipality.
+4 | Cells and Life Processes | All living things are made of cells that carry out life processes.
+- Cells come from pre-existing cells.
+- Living things grow, reproduce, respond, and maintain homeostasis.
+- Photosynthesis and respiration are key energy processes.
+? Compare photosynthesis and cellular respiration.
+5 | Evolution and Ecology | Life on Earth changes over time, and organisms interact with their environment.
+- Natural selection drives evolution.
+- Ecosystems depend on interactions among organisms.
+- Human activities can disrupt ecosystems.
+? Give an example of how humans have changed a local ecosystem.
+
+@ SHS-PHYSSCI
+1 | Formation of Elements | Elements were formed in the Big Bang and inside stars.
+- Hydrogen and helium formed shortly after the Big Bang.
+- Heavier elements formed through nuclear fusion in stars.
+- The heaviest elements formed in supernova explosions.
+? Explain why we are said to be made of "star stuff."
+2 | Properties of Matter | The properties of a substance depend on its structure and bonding.
+- Polarity affects how substances mix, like oil and water.
+- Intermolecular forces affect boiling and melting points.
+- Structure explains why diamonds are hard and graphite is soft.
+? Explain why oil does not mix with water.
+3 | Chemical Reactions | A chemical reaction changes substances into new substances.
+- Reactions follow the law of conservation of mass.
+- Reaction rate depends on temperature, concentration, surface area, and catalysts.
+- Combustion, neutralization, and decomposition are common types.
+? Why does food spoil faster at room temperature than in the refrigerator?
+4 | Motion and Forces | Physics explains how and why objects move.
+- Aristotle believed heavy objects fall faster; Galileo showed all objects fall at the same rate without air.
+- Newton's laws explain motion using force, mass, and acceleration.
+- Momentum = mass × velocity.
+? Explain why passengers lurch forward when a jeepney suddenly stops.
+5 | Light and Electromagnetism | Light behaves as both a wave and a particle.
+- Reflection, refraction, and dispersion explain rainbows and mirages.
+- Electricity and magnetism are connected and produce electromagnetic waves.
+- Einstein's work changed how we understand light and energy.
+? Explain how a rainbow forms.
+
+@ SHS-ORALCOM
+1 | Nature and Process of Communication | Communication is the process of sharing meaning through verbal and nonverbal messages.
+- Elements: speaker, message, channel, receiver, feedback, and context.
+- Communication can be verbal or nonverbal.
+- Noise or barriers can block understanding.
+? Draw a communication model and label its parts.
+2 | Communication Breakdown | A communication breakdown happens when the message is not understood as intended.
+- Barriers can be physical, psychological, semantic, or cultural.
+- Clear language and active listening reduce misunderstanding.
+- Feedback helps confirm the message was understood.
+? Describe a misunderstanding you experienced and how it could have been avoided.
+3 | Intercultural Communication | Intercultural communication is communication between people from different cultures.
+- Respect cultural differences in language, gestures, and values.
+- Avoid stereotypes and generalizations.
+- Be open-minded and willing to learn.
+? Give an example of a gesture that means different things in different cultures.
+4 | Speech Acts and Communicative Strategies | Speech acts are what we do with words, like requesting, promising, or apologizing.
+- Locutionary act: the actual words said.
+- Illocutionary act: the intention behind the words.
+- Perlocutionary act: the effect on the listener.
+? Identify the intention behind "It's cold in here."
+5 | Types of Speeches and Delivery | Speeches can be classified by purpose and by delivery.
+- Purposes: informative, persuasive, and entertainment.
+- Delivery types: reading from a manuscript, memorized, impromptu, and extemporaneous.
+- Good delivery uses clear voice, eye contact, and natural gestures.
+? Deliver a one-minute impromptu speech on your favorite hobby.
+
+@ SHS-RECOM
+1 | Reading and Thinking Strategies | Good readers use strategies to understand and remember what they read.
+- Preview the text by reading titles, headings, and summaries.
+- Ask questions and make predictions while reading.
+- Summarize the main ideas after reading.
+? Use the SQ3R method on a chapter of any textbook.
+2 | Patterns of Development | Writers organize ideas using patterns of development.
+- Narration tells a story; description paints a picture with words.
+- Definition explains meaning; classification groups ideas into categories.
+- Comparison-contrast and cause-effect show relationships.
+? Identify the pattern of development used in a short article.
+3 | Properties of a Well-Written Text | A well-written text is organized, coherent, and appropriate for its audience.
+- Organization is the logical arrangement of ideas.
+- Coherence and cohesion make ideas flow smoothly.
+- Language use should fit the audience and purpose.
+? Revise a messy paragraph to improve its coherence.
+4 | Critical Reading | Critical reading means evaluating a text instead of simply accepting it.
+- Identify claims of fact, value, and policy.
+- Check whether the evidence is enough and reliable.
+- Notice the author's purpose and possible bias.
+? Identify the claim in an editorial and evaluate its supporting evidence.
+5 | Writing Professional Correspondence | Professional writing follows formats that are clear and polite.
+- Letters of application include your purpose, qualifications, and contact details.
+- Resumes summarize education, skills, and experience.
+- Use formal language and proofread carefully.
+? Write a letter of application for a part-time job.
+
+@ SHS-EMPTECH
+1 | ICT in the Philippines | Information and communication technology has changed how Filipinos learn, work, and connect.
+- The Philippines is a leader in business process outsourcing.
+- Web 1.0 was read-only, Web 2.0 is interactive, and Web 3.0 is the semantic web.
+- ICT trends include mobile technology, social media, and cloud computing.
+? Give three ways ICT has changed your daily life.
+2 | Online Safety and Netiquette | Staying safe online protects your identity, privacy, and reputation.
+- Use strong passwords and do not share personal information.
+- Beware of phishing, malware, and scams.
+- Netiquette means being respectful and responsible online.
+? Create five rules of netiquette for your class group chat.
+3 | Productivity Tools | Productivity tools help create professional documents, spreadsheets, and presentations.
+- Mail merge creates personalized letters from one template.
+- Spreadsheet functions like SUM, AVERAGE, and IF automate calculations.
+- Presentations should be simple, visual, and readable.
+? Use the IF function to mark scores 75 and above as "Passed."
+4 | Imaging and Design for Online Media | Good design makes online content clear and attractive.
+- Principles of design include balance, contrast, emphasis, and unity.
+- Use compressed images for faster loading.
+- Respect copyright when using images.
+? Design a simple infographic about online safety.
+5 | ICT Project for Social Change | ICT can be used to solve problems and help communities.
+- Identify a community need.
+- Plan a website, campaign, or app to address it.
+- Measure the impact of your project.
+? Plan an online campaign that promotes a cause in your community.
+
+@ SHS-APPECON
+1 | Introduction to Applied Economics | Applied economics uses economic principles to solve real problems.
+- Scarcity forces individuals and societies to make choices.
+- Economics is divided into microeconomics and macroeconomics.
+- Economic decisions affect jobs, prices, and growth.
+? Identify an economic problem in your community and its possible causes.
+2 | Market Demand and Supply | Prices are determined by the interaction of demand and supply.
+- Changes in income, tastes, and prices of related goods shift demand.
+- Changes in technology and input costs shift supply.
+- Shortages and surpluses push prices toward equilibrium.
+? Explain what happens to the price of rice after a bad harvest.
+3 | Contemporary Economic Issues | Many current issues affect the Filipino consumer and worker.
+- Inflation reduces the purchasing power of money.
+- Minimum wage policies affect workers and businesses.
+- Rising fuel prices affect transport and food costs.
+? Interview a parent on how rising prices have affected household spending.
+4 | Industry Analysis | Industry analysis studies the strengths and weaknesses of an industry.
+- Consider demand, competition, suppliers, and government regulations.
+- SWOT analysis looks at strengths, weaknesses, opportunities, and threats.
+- Good analysis helps entrepreneurs choose the right business.
+? Make a SWOT analysis of a local business in your area.
+5 | Socioeconomic Impact of Business | Businesses affect communities through jobs, taxes, and the environment.
+- They create employment and income.
+- They should follow laws and practice social responsibility.
+- Sustainable businesses balance profit with care for people and the planet.
+? Evaluate the positive and negative effects of a business near your home.
+
+@ SHS-CREATIVEW
+1 | Imagery and Figurative Language | Creative writers use imagery and figures of speech to make writing vivid.
+- Imagery appeals to the five senses.
+- Simile compares using "like" or "as"; metaphor compares directly.
+- Personification gives human traits to non-human things.
+? Write a paragraph describing the rain using at least three senses.
+2 | Writing Poetry | Poetry expresses ideas and emotions through carefully chosen words, sound, and form.
+- Elements include rhyme, rhythm, meter, and stanza.
+- Free verse does not follow fixed rhyme or meter.
+- Every word should earn its place.
+? Write a free-verse poem about your hometown.
+3 | Writing Fiction | Fiction tells imagined stories with characters, setting, plot, and conflict.
+- Show, don't tell: reveal emotions through actions and details.
+- Point of view affects how readers experience the story.
+- Strong conflict keeps readers interested.
+? Write the opening scene of a short story with a strong conflict.
+4 | Writing Drama | Drama is written to be performed, using dialogue and stage directions.
+- Characters reveal themselves through what they say and do.
+- A one-act play focuses on a single situation.
+- Stage directions guide actors and set designers.
+? Write a one-page scene for two characters.
+5 | Revising and Workshopping | Good writing comes from revision and honest feedback.
+- Read your work aloud to catch awkward lines.
+- In a workshop, give specific and kind feedback.
+- Revise for clarity, then for style.
+? Exchange a piece with a classmate and give three specific suggestions.
+
+@ SHS-PR
+1 | Nature of Research | Research is a systematic process of finding answers to questions.
+- Quantitative research uses numbers and statistics.
+- Qualitative research explores experiences and meanings.
+- Good research is objective, ethical, and replicable.
+? Give one research topic suited for quantitative and one for qualitative research.
+2 | Identifying the Research Problem | A clear research problem guides the whole study.
+- Choose a topic that is relevant, specific, and doable.
+- Write a research title and statement of the problem.
+- Define the scope and limitations of the study.
+? Write a research title and three specific research questions.
+3 | Review of Related Literature | The review of related literature shows what is already known about the topic.
+- Use reliable sources such as journals and books.
+- Summarize and synthesize, not just copy.
+- Cite sources properly to avoid plagiarism.
+? Find and summarize two studies related to your research topic.
+4 | Research Design and Data Gathering | The research design explains how data will be collected and analyzed.
+- Choose respondents through appropriate sampling.
+- Instruments include questionnaires, interviews, and tests.
+- Ask for informed consent from respondents.
+? Draft five questionnaire items for your study.
+5 | Data Analysis and Reporting | Data analysis turns raw data into findings that answer the research questions.
+- Use tables and graphs to present results.
+- Interpret results and connect them to the literature.
+- Write conclusions and recommendations based on findings.
+? Present sample data in a table and write a short interpretation.
+
+@ SHS-PE
+1 | Fitness and Healthy Lifestyle | A healthy lifestyle combines regular activity, good nutrition, and enough rest.
+- Adults and teens need regular moderate-to-vigorous activity.
+- Sleep and stress management affect fitness.
+- Set realistic and measurable fitness goals.
+? Create a personal fitness plan for one week.
+2 | Exercise Principles | Following exercise principles makes training safe and effective.
+- FITT: Frequency, Intensity, Time, and Type.
+- Progressive overload means gradually increasing difficulty.
+- Rest and recovery prevent injury.
+? Apply the FITT principle to your favorite exercise.
+3 | Sports and Recreation | Sports and recreational activities improve fitness and social skills.
+- Choose activities you enjoy so you stay active.
+- Learn the rules and basic skills of the sport.
+- Practice good sportsmanship.
+? Organize a short game with classmates and explain its rules.
+4 | Dance as Fitness | Dance builds endurance, coordination, and confidence.
+- Types include folk dance, hip-hop, and contemporary dance.
+- Dance can be done alone or in groups.
+- Warm up properly to avoid injury.
+? Learn and perform a short dance routine with your group.
+5 | Leading Physical Activities | Leaders help others stay active and safe.
+- Plan activities that suit the group's fitness level.
+- Give clear instructions and demonstrations.
+- Encourage participation and inclusion.
+? Lead a five-minute warm-up for your class.
+
+@ SHS-WORKIMM
+1 | Introduction to Work Immersion | Work immersion lets students experience real work in a chosen field.
+- It connects classroom learning to actual work settings.
+- Students observe and perform tasks under supervision.
+- It helps students decide on future careers.
+? List three things you hope to learn during work immersion.
+2 | Workplace Behavior and Ethics | Proper behavior in the workplace shows professionalism.
+- Be punctual, wear proper attire, and follow company rules.
+- Respect supervisors and co-workers.
+- Keep company information confidential.
+? Write a list of do's and don'ts for your immersion site.
+3 | Safety and Health at Work | Every worker must follow safety rules to prevent accidents.
+- Know the emergency exits and procedures.
+- Use protective equipment when needed.
+- Report hazards or accidents immediately.
+? Identify possible hazards at your immersion site.
+4 | Performing Work Tasks | During immersion, students apply their skills to real tasks.
+- Follow instructions carefully and ask questions when unsure.
+- Keep a daily log of tasks and learnings.
+- Accept feedback and improve.
+? Keep a daily journal of your tasks for one week.
+5 | Portfolio and Reflection | A portfolio documents your work immersion experience.
+- Include your daily logs, photos, and outputs.
+- Reflect on what you learned and how you grew.
+- Present your experience clearly and honestly.
+? Write a reflection paper on your work immersion experience.
+
+@ STEM-PRECAL
+1 | Conic Sections | Conic sections are curves formed when a plane cuts a cone.
+- The four conics are the circle, parabola, ellipse, and hyperbola.
+- Each has a standard equation and key parts like center and foci.
+- Conics appear in satellite dishes, orbits, and bridges.
+? Find the center and radius of x² + y² − 6x + 4y − 3 = 0.
+2 | Systems of Nonlinear Equations | Nonlinear systems include at least one equation that is not linear.
+- Solve by substitution or elimination.
+- Solutions are the intersection points of the graphs.
+- A system can have zero, one, or many solutions.
+? Solve the system y = x² and y = x + 2.
+3 | Sequences, Series, and Mathematical Induction | Series add the terms of a sequence, and induction proves statements for all natural numbers.
+- Sigma notation writes sums compactly.
+- The binomial theorem expands (a + b)ⁿ.
+- Mathematical induction has a base case and an inductive step.
+? Expand (x + 2)⁴ using the binomial theorem.
+4 | Angles and the Unit Circle | Trigonometry extends to any angle using the unit circle.
+- Angles can be measured in degrees or radians: 180° = π radians.
+- On the unit circle, cos θ is the x-coordinate and sin θ is the y-coordinate.
+- Reference angles help find trigonometric values.
+? Convert 135° to radians and find sin 135°.
+5 | Trigonometric Identities and Equations | Identities are equations true for all values, and they help simplify expressions.
+- Pythagorean identity: sin²θ + cos²θ = 1.
+- Sum and difference formulas expand sin(A ± B) and cos(A ± B).
+- Trigonometric equations may have many solutions.
+? Prove that (1 − cos²θ) / sin θ = sin θ.
+
+@ STEM-BIO1
+1 | Cell Theory and Cell Structure | The cell theory states that all living things are made of cells, the basic unit of life.
+- Prokaryotic cells have no nucleus; eukaryotic cells do.
+- Organelles have specific functions, like mitochondria for energy.
+- Cell structure is related to cell function.
+? Make a table of five organelles and their functions.
+2 | Cell Cycle and Division | Cells divide to grow, repair, and reproduce.
+- Mitosis produces two identical cells for growth and repair.
+- Meiosis produces four sex cells with half the chromosomes.
+- Errors in cell division can lead to diseases like cancer.
+? Compare mitosis and meiosis using a Venn diagram.
+3 | Transport Mechanisms | Cells move substances across the membrane to stay alive.
+- Passive transport, like diffusion and osmosis, needs no energy.
+- Active transport uses energy to move substances against a gradient.
+- Endocytosis and exocytosis move large particles.
+? Explain why salt on a slug causes it to shrink.
+4 | Enzymes | Enzymes are proteins that speed up chemical reactions in living things.
+- Each enzyme fits a specific substrate, like a lock and key.
+- Temperature and pH affect enzyme activity.
+- Digestive enzymes break down food.
+? Explain why a high fever can be dangerous to the body's enzymes.
+5 | Energy in Cells | Cells capture and use energy through photosynthesis and cellular respiration.
+- ATP is the energy currency of the cell.
+- Photosynthesis stores energy in glucose using sunlight.
+- Cellular respiration releases energy from glucose.
+? Write the overall equations for photosynthesis and cellular respiration.
+
+@ STEM-CHEM1
+1 | Matter and Its Properties | Matter is anything that has mass and takes up space.
+- Physical properties can be observed without changing the substance.
+- Chemical properties describe how a substance reacts.
+- Matter can be a pure substance or a mixture.
+? Classify ten household items as elements, compounds, or mixtures.
+2 | Measurements | Chemistry relies on accurate and precise measurements.
+- The SI system is used in science.
+- Significant figures show the precision of a measurement.
+- Accuracy is closeness to the true value; precision is consistency.
+? Round 0.0045670 to three significant figures.
+3 | Atoms, Molecules, and Ions | Atoms are the building blocks of matter, made of protons, neutrons, and electrons.
+- The atomic number is the number of protons.
+- Isotopes have the same protons but different neutrons.
+- Ions form when atoms gain or lose electrons.
+? Find the number of protons, neutrons, and electrons in ²³Na⁺.
+4 | Stoichiometry | Stoichiometry uses balanced equations to calculate amounts of reactants and products.
+- One mole contains 6.022 × 10²³ particles.
+- Molar mass converts grams to moles.
+- The limiting reactant determines how much product forms.
+? How many moles are in 36 grams of water (H₂O)?
+5 | Gases | The behavior of gases is described by gas laws.
+- The ideal gas law: PV = nRT.
+- Dalton's law: total pressure is the sum of partial pressures.
+- The kinetic molecular theory explains gas behavior.
+? Use PV = nRT to find the volume of 1 mole of gas at standard conditions.
+
+@ STEM-BIO2
+1 | Genetics | Genetics studies how traits are inherited through genes.
+- Mendel's laws: segregation and independent assortment.
+- Some traits show incomplete dominance or codominance.
+- Sex-linked traits are carried on the X chromosome.
+? Explain why color blindness is more common in males.
+2 | Recombinant DNA and Biotechnology | Biotechnology uses living things to make useful products.
+- Recombinant DNA combines DNA from different sources.
+- Applications include insulin production and genetically modified crops.
+- Biotechnology raises ethical questions that need careful thought.
+? Debate one benefit and one risk of genetically modified organisms.
+3 | Evolution | Evolution is the change in species over many generations.
+- Evidence includes fossils, comparative anatomy, and DNA.
+- Darwin proposed natural selection as its main mechanism.
+- New species form through isolation and adaptation.
+? Explain how antibiotic resistance in bacteria is an example of evolution.
+4 | Systematics and Classification | Systematics classifies living things based on their evolutionary relationships.
+- Taxonomic levels: domain, kingdom, phylum, class, order, family, genus, species.
+- Scientific names use binomial nomenclature, like Homo sapiens.
+- Phylogenetic trees show common ancestry.
+? Write the full classification of the Philippine eagle.
+5 | Organ Systems | Plants and animals have organ systems that work together to keep them alive.
+- Animals have digestive, circulatory, respiratory, and nervous systems.
+- Plants have root and shoot systems.
+- Organ systems maintain homeostasis.
+? Compare how plants and animals transport materials.
+
+@ STEM-CHEM2
+1 | Intermolecular Forces | Intermolecular forces are attractions between molecules that affect physical properties.
+- Types include dispersion forces, dipole-dipole forces, and hydrogen bonds.
+- Stronger forces lead to higher boiling points.
+- Hydrogen bonding explains water's unique properties.
+? Explain why water has a higher boiling point than methane.
+2 | Solutions and Concentration | Concentration describes how much solute is in a solution.
+- Molarity (M) = moles of solute ÷ liters of solution.
+- Percent by mass and mole fraction are other units.
+- Colligative properties depend on the number of solute particles.
+? Find the molarity of 58.5 g of NaCl dissolved in 1 liter of solution.
+3 | Thermochemistry | Thermochemistry studies the heat involved in chemical reactions.
+- Exothermic reactions release heat; endothermic reactions absorb heat.
+- Enthalpy change (ΔH) measures heat at constant pressure.
+- Hess's law adds reaction steps to find total ΔH.
+? Classify burning wood and melting ice as exothermic or endothermic.
+4 | Chemical Kinetics and Equilibrium | Kinetics studies reaction rates, and equilibrium describes balanced reversible reactions.
+- Catalysts speed up reactions without being used up.
+- At equilibrium, forward and reverse rates are equal.
+- Le Chatelier's principle predicts how equilibrium shifts.
+? Predict what happens to an equilibrium when more reactant is added.
+5 | Acids, Bases, and Electrochemistry | Acids and bases react in predictable ways, and electrochemistry relates chemistry to electricity.
+- pH below 7 is acidic; above 7 is basic.
+- Neutralization forms salt and water.
+- Batteries produce electricity through redox reactions.
+? Test common household items with a natural indicator like red cabbage.
+
+@ STEM-PHYSICS
+1 | Kinematics | Kinematics describes motion without considering its causes.
+- Displacement, velocity, and acceleration are vector quantities.
+- For constant acceleration: v = v₀ + at.
+- Free-falling objects accelerate at about 9.8 m/s².
+? A ball is dropped from rest. How fast is it moving after 3 seconds?
+2 | Newton's Laws and Dynamics | Dynamics explains motion using forces.
+- Draw free-body diagrams to show all forces on an object.
+- Net force = mass × acceleration.
+- Friction opposes motion between surfaces.
+? Draw a free-body diagram of a box being pushed across the floor.
+3 | Work, Energy, and Momentum | Energy and momentum are conserved quantities that help solve physics problems.
+- Work-energy theorem: work done equals change in kinetic energy.
+- Mechanical energy is conserved when only gravity acts.
+- Total momentum is conserved in collisions.
+? Find the speed of a 2 kg ball dropped from 5 m just before it hits the ground.
+4 | Electricity and Circuits | Electric circuits allow charges to flow and do useful work.
+- Ohm's law: V = IR.
+- Series circuits have one path; parallel circuits have many paths.
+- Power = voltage × current.
+? Find the current through a 10-ohm resistor connected to a 12 V battery.
+5 | Magnetism and Electromagnetic Induction | Moving charges create magnetic fields, and changing magnetic fields create currents.
+- Magnets have north and south poles.
+- Faraday's law explains how generators produce electricity.
+- Transformers change voltage levels.
+? Explain how a generator in a power plant produces electricity.
+
+@ STEM-BASICCAL
+1 | Limits | A limit describes the value a function approaches as the input gets close to a number.
+- Notation: lim (x→a) f(x) = L.
+- Limits can be found from tables, graphs, or algebra.
+- One-sided limits approach from the left or the right.
+? Find lim (x→2) (x² − 4) / (x − 2).
+2 | Continuity | A function is continuous at a point if its graph has no break there.
+- f(a) must exist.
+- The limit as x approaches a must exist.
+- The limit must equal f(a).
+? Is f(x) = 1/x continuous at x = 0? Explain.
+3 | Derivatives | The derivative measures the instantaneous rate of change of a function.
+- It is the slope of the tangent line at a point.
+- Power rule: d/dx (xⁿ) = nxⁿ⁻¹.
+- Product, quotient, and chain rules handle more complex functions.
+? Find the derivative of f(x) = 3x⁴ − 2x² + 7.
+4 | Applications of Derivatives | Derivatives help solve problems about rates and optimization.
+- Critical points occur where the derivative is zero or undefined.
+- Maximum and minimum values solve optimization problems.
+- Related rates connect changing quantities.
+? Find two positive numbers whose sum is 20 and whose product is as large as possible.
+5 | Integration | Integration is the reverse of differentiation and finds areas and accumulated change.
+- Antiderivative of xⁿ is xⁿ⁺¹/(n + 1) + C.
+- The definite integral gives the area under a curve.
+- The Fundamental Theorem of Calculus links derivatives and integrals.
+? Evaluate the integral of 2x from 0 to 3.

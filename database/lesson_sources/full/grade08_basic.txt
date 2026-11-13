@@ -1,0 +1,186 @@
+@ HS8-FIL fil
+# Karunungang-bayan | Mga pahayag ng ating mga ninuno na puno ng aral at talino.
+> Bago pa magkaroon ng paaralan, itinuturo na ng ating mga ninuno ang aral sa pamamagitan ng maiikling pahayag.
+= Karunungang-bayan :: mga pahayag na nagmula sa ating mga ninuno at nagtataglay ng aral.
+= Salawikain :: pahayag na may malalim na aral tungkol sa buhay.
+= Sawikain :: idyoma o pahayag na hindi tuwiran ang kahulugan.
+= Bugtong :: palaisipang may nakatagong sagot.
+! Halimbawa :: Salawikain: "Kung ano ang itinanim, siya ring aanihin." Sawikain: "Makapal ang mukha" (walang hiya). Bugtong: "Isang prinsesa, nakaupo sa tasa." Sagot: kasoy.
+? Ano ang salawikain? :: Pahayag na may malalim na aral tungkol sa buhay.
+? Ano ang ibig sabihin ng sawikaing "Makapal ang mukha"? :: Walang hiya
+? Ano ang bugtong? :: Palaisipang may nakatagong sagot.
+
+# Florante at Laura: Kaligiran ng Akda | Ang may-akda at ang kasaysayan ng obra maestra ni Balagtas.
+> Ang Florante at Laura ay isa sa pinakamahahalagang akda sa panitikang Pilipino.
+= Francisco Balagtas :: ang sumulat ng Florante at Laura, kilala bilang "Prinsipe ng Makatang Tagalog."
+= Awit :: tulang may labindalawang pantig bawat taludtod.
+= Tagpuan :: ang Albanya, isang kaharian sa Europa.
+= Alegorya :: akdang may nakatagong kahulugan sa likod ng kuwento.
+! Halimbawa :: Itinakda ni Balagtas ang kuwento sa Albanya upang maitago ang kanyang puna sa pang-aabuso ng mga Kastila sa Pilipinas.
+? Sino ang sumulat ng Florante at Laura? :: Francisco Balagtas
+? Ilang pantig mayroon ang bawat taludtod ng awit? :: Labindalawa
+? Bakit sa Albanya itinakda ang kuwento? :: Upang maitago ang puna sa pamahalaang Kastila.
+
+@ HS8-ENGLISH
+# Afro-Asian Literature | Stories and poems from the cultures of Africa and Asia.
+> Africa and Asia have rich literary traditions that show values like respect for elders, family, and nature.
+= Afro-Asian literature :: literary works from Africa and Asia.
+= Haiku :: a Japanese poem of three lines with 5, 7, and 5 syllables.
+= Fable :: a short story, often with animals, that teaches a lesson.
+= Epic :: a long poem about the adventures of a hero.
+! Example :: A haiku: "Rain on the tin roof / the old cat curls by the stove / waiting for the sun." It has 5, 7, and 5 syllables.
+? What is a haiku? :: A Japanese poem of three lines with 5, 7, and 5 syllables.
+? What is an epic? :: A long poem about the adventures of a hero.
+? Name one value often seen in Afro-Asian literature. :: Any one: respect for elders, family, nature
+
+# Context Clues | Using nearby words to understand unfamiliar words.
+> You do not always need a dictionary. The words around an unfamiliar word can give you hints.
+= Context clues :: hints in a sentence that help explain the meaning of a word.
+= Definition clue :: the meaning is given directly.
+= Synonym clue :: a word with a similar meaning is nearby.
+= Antonym clue :: a word with the opposite meaning is nearby.
+= Example clue :: examples show the meaning.
+! Example :: "The house was immaculate, so clean that not a speck of dust could be found." The phrase "so clean" tells us immaculate means very clean.
+? What are context clues? :: Hints in a sentence that help explain a word's meaning.
+? In "He was timid, not brave like his brother," what does timid mean? :: Shy or not brave (antonym clue)
+? What type of clue gives the meaning directly? :: Definition clue
+
+@ HS8-MATH
+# Factoring Polynomials | Writing a polynomial as a product of simpler factors.
+> Factoring is the reverse of multiplying. It breaks an expression into parts that multiply to give it.
+= Polynomial :: an expression with one or more terms, like x² + 5x + 6.
+= Factor :: an expression that divides another evenly.
+= Greatest common factor (GCF) :: the largest factor shared by all terms.
+= Difference of two squares :: a² − b² = (a + b)(a − b).
+! Example :: GCF: 6x + 9 = 3(2x + 3). Difference of squares: x² − 25 = (x + 5)(x − 5). Trinomial: x² + 5x + 6 = (x + 2)(x + 3), because 2 × 3 = 6 and 2 + 3 = 5.
+? Factor 4x + 12. :: 4(x + 3)
+? Factor x² − 16. :: (x + 4)(x − 4)
+? Factor x² + 7x + 10. :: (x + 2)(x + 5)
+
+# Rational Algebraic Expressions | Fractions with polynomials, and how to simplify them.
+> Just like fractions with numbers, we can have fractions with variables.
+= Rational algebraic expression :: a fraction whose numerator and denominator are polynomials.
+= Simplest form :: when the numerator and denominator have no common factor.
+= Restriction :: a value that makes the denominator zero, which is not allowed.
+* To simplify, factor the numerator and denominator, then cancel common factors.
+! Example :: (x² − 9) / (x + 3) = (x + 3)(x − 3) / (x + 3) = x − 3, where x ≠ −3.
+? What is a rational algebraic expression? :: A fraction whose numerator and denominator are polynomials.
+? Simplify (2x + 4) / 2. :: x + 2
+? Why can't the denominator be zero? :: Division by zero is undefined.
+
+@ HS8-SCI
+# Forces and Newton's Laws | How forces change the motion of objects.
+> Every push or pull you make is a force. Newton's three laws explain how forces affect motion.
+= Force :: a push or pull, measured in newtons (N).
+= Inertia :: the tendency of an object to resist change in its motion.
+= First law :: an object stays at rest or in motion unless a force acts on it.
+= Second law :: force = mass × acceleration (F = ma).
+= Third law :: for every action, there is an equal and opposite reaction.
+! Example :: Passengers lurch forward when a jeepney stops suddenly (first law). A rocket pushes gas down, and the gas pushes the rocket up (third law).
+? What is inertia? :: The tendency of an object to resist change in motion.
+? What is the formula of the second law? :: F = ma
+? Which law explains a rocket launch? :: Third law
+
+# Work, Power, and Energy | How force moves objects and how energy changes form.
+> When you lift your bag, you do work and use energy. These ideas are connected.
+= Work :: done when a force moves an object; work = force × distance, measured in joules (J).
+= Energy :: the ability to do work.
+= Kinetic energy :: energy of a moving object.
+= Potential energy :: stored energy, such as an object held high.
+= Power :: how fast work is done; power = work ÷ time, measured in watts (W).
+! Example :: Lifting a 20 N box up 2 m does 20 × 2 = 40 J of work. If it takes 4 seconds, power = 40 ÷ 4 = 10 W.
+? What is energy? :: The ability to do work.
+? A ball rolling down a hill has what kind of energy? :: Kinetic energy
+? Pushing with 10 N for 3 m does how much work? :: 30 J
+
+@ HS8-AP fil
+# Heograpiya ng Daigdig | Ang mga katangiang pisikal ng mundo at kung paano ito nakaaapekto sa tao.
+> Upang maunawaan ang kasaysayan ng daigdig, kailangan munang kilalanin ang mundong pinangyarihan nito.
+= Kontinente :: malaking masa ng lupa; may pito sa daigdig.
+= Karagatan :: malaking anyong-tubig; may lima sa daigdig.
+= Latitude :: guhit na pahalang na sumusukat ng layo mula sa ekwador.
+= Longitude :: guhit na patayong sumusukat ng layo mula sa Prime Meridian.
+= Klima :: karaniwang kalagayan ng panahon sa isang lugar sa mahabang panahon.
+! Halimbawa :: Ang Pilipinas ay malapit sa ekwador kaya tropikal ang klima nito: mainit at may tag-ulan at tag-araw.
+? Ilan ang kontinente sa daigdig? :: Pito
+? Ano ang sinusukat ng latitude? :: Layo mula sa ekwador
+? Bakit tropikal ang klima ng Pilipinas? :: Dahil malapit ito sa ekwador.
+
+# Mga Sinaunang Kabihasnan | Ang mga unang kabihasnang umusbong sa daigdig.
+> Ang mga unang kabihasnan ay nagsimula malapit sa mga ilog kung saan may tubig at matabang lupa.
+= Kabihasnan :: maunlad na pamumuhay na may pamahalaan, relihiyon, sistema ng pagsulat, at lungsod.
+= Mesopotamia :: "lupain sa pagitan ng dalawang ilog," ang Tigris at Euphrates.
+= Ehipto :: kabihasnang umusbong sa tabi ng Ilog Nile; kilala sa mga piramide.
+= Gresya :: pinagmulan ng demokrasya at pilosopiya.
+! Halimbawa :: Ang Ilog Nile ay bumabaha taon-taon at nag-iiwan ng matabang lupa, kaya naging masagana ang pagsasaka ng mga Ehipsiyo.
+? Ano ang kabihasnan? :: Maunlad na pamumuhay na may pamahalaan, relihiyon, pagsulat, at lungsod.
+? Saan umusbong ang kabihasnang Ehipto? :: Sa tabi ng Ilog Nile
+? Ano ang naging ambag ng Gresya? :: Demokrasya at pilosopiya
+
+@ HS8-ESP fil
+# Ang Pamilya | Ang pinakaunang paaralan ng pagmamahal at pagpapahalaga.
+> Sa pamilya tayo unang natututong magmahal, gumalang, at magtulungan.
+= Pamilya :: ang pinakamaliit at pinakapangunahing yunit ng lipunan.
+= Pagpapahalaga :: mga paniniwalang itinuturing na mahalaga, gaya ng katapatan at paggalang.
+= Tungkulin :: mga gawaing inaasahan sa bawat kasapi ng pamilya.
+! Halimbawa :: Tinuturuan ng magulang ang anak na magsabi ng "po" at "opo." Ang anak naman ay tumutulong sa gawaing-bahay bilang kanyang tungkulin.
+? Ano ang pamilya? :: Ang pinakamaliit at pinakapangunahing yunit ng lipunan.
+? Magbigay ng isang pagpapahalagang natutunan sa pamilya. :: Halimbawa: paggalang, katapatan, pagtutulungan
+? Ano ang isang tungkulin ng anak sa pamilya? :: Halimbawa: tumulong sa gawaing-bahay, mag-aral nang mabuti
+
+# Komunikasyon sa Pamilya | Ang maayos na pag-uusap bilang susi sa matatag na pamilya.
+> Maraming hindi pagkakaunawaan sa pamilya ang naiiwasan kung maayos ang pag-uusap.
+= Komunikasyon :: pagpapalitan ng mensahe, ideya, at damdamin.
+= Aktibong pakikinig :: pakikinig nang buong atensyon at pag-unawa.
+= Pasalitang komunikasyon :: gamit ang salita.
+= Di-pasalitang komunikasyon :: gamit ang kilos, ekspresyon ng mukha, at tono.
+! Halimbawa :: Sa halip na sumigaw kapag naiinis, mahinahong sinabi ni Ben sa kanyang kapatid: "Nalulungkot ako kapag ginagamit mo ang gamit ko nang hindi nagpapaalam."
+? Ano ang komunikasyon? :: Pagpapalitan ng mensahe, ideya, at damdamin.
+? Ano ang aktibong pakikinig? :: Pakikinig nang buong atensyon at pag-unawa.
+? Magbigay ng halimbawa ng di-pasalitang komunikasyon. :: Halimbawa: pagngiti, pagsimangot, pagtango
+
+@ HS8-MAPEH
+# Music of Southeast Asia | Gong ensembles and traditional music of our neighbors.
+> Countries in Southeast Asia share musical traditions built around gongs and percussion.
+= Gamelan :: an Indonesian ensemble of gongs, drums, and metal xylophones.
+= Piphat :: a Thai ensemble of wind and percussion instruments used in ceremonies.
+= Kulintang :: a Philippine set of small gongs played in a row, from Mindanao.
+= Ensemble :: a group of musicians playing together.
+! Example :: The kulintang of the Maguindanao and the gamelan of Indonesia both use tuned gongs, showing a shared regional tradition.
+? What is a gamelan? :: An Indonesian ensemble of gongs, drums, and metal xylophones.
+? What Philippine instrument is similar to the gamelan? :: Kulintang
+? What is an ensemble? :: A group of musicians playing together.
+
+# Arts of Southeast Asia | Textiles, sculpture, and puppetry of the region.
+> Southeast Asian art often carries religious and cultural meaning.
+= Batik :: an Indonesian cloth decorated using wax and dye.
+= Wayang kulit :: shadow puppetry from Java using leather puppets.
+= Angkor Wat :: a huge temple complex in Cambodia known for stone carvings.
+= Textile :: woven or printed cloth.
+! Example :: In batik, artists draw designs with hot wax. The waxed parts resist the dye, leaving patterns when the wax is removed.
+? What is batik? :: Cloth decorated using wax and dye.
+? Where is wayang kulit from? :: Java, Indonesia
+? Where is Angkor Wat? :: Cambodia
+
+@ HS8-TLE
+# Entrepreneurship Basics | Starting and running a small business.
+> Many Filipinos earn a living by starting their own small businesses, like sari-sari stores and food stalls.
+= Entrepreneurship :: the process of starting and managing a business.
+= Entrepreneur :: a person who starts a business and takes the risk.
+= Profit :: money earned after subtracting costs from sales.
+= Capital :: money used to start a business.
+! Example :: With ₱2,000 capital, a student sells banana cue. She earns ₱2,800 from sales after a week. Profit = ₱2,800 − ₱2,000 = ₱800.
+? What is an entrepreneur? :: A person who starts a business and takes the risk.
+? What is capital? :: Money used to start a business.
+? Sales are ₱1,500 and costs are ₱900. What is the profit? :: ₱600
+
+# Food Preparation | Basic hygiene and safety in preparing food.
+> Safe food preparation prevents sickness and keeps food tasty and nutritious.
+= Food safety :: practices that prevent food from becoming harmful.
+= Cross-contamination :: spreading germs from raw food to cooked food.
+= Sanitation :: keeping tools and work areas clean.
+= Perishable food :: food that spoils quickly, like meat and milk.
+! Example :: A cook uses one chopping board for raw chicken and another for vegetables to avoid cross-contamination.
+? What is cross-contamination? :: Spreading germs from raw food to cooked food.
+? Give one example of perishable food. :: Any one: meat, fish, milk
+? Why should we wash hands before cooking? :: To remove germs and keep food safe.

@@ -1,0 +1,254 @@
+/* ============================================================
+   Arandia College eLMS — Responsive layer (Admin · Teacher · Student)
+   File: assets/css/elms-responsive.css
+   Loaded LAST by includes/header.php, after each role's own styles and
+   the shared design system (elms-ui.css).
+   Works with assets/js/elms-nav.js (drawer + table scroll boxes).
+
+   Breakpoints used here
+     ≥ 1920px   wide / TV: content gets a comfortable maximum width
+     < 992px    phones + tablets: sidebar → slide-in drawer
+     < 768px    phones: tighter spacing, single-column helpers
+     < 400px    small phones
+   ============================================================ */
+
+:root {
+  --nav-drawer-w: min(288px, calc(100vw - 64px));
+  --nav-rail-w: 76px;
+  --nav-cnav-w: min(260px, calc(100vw - 76px - 64px));
+  --nav-ease: cubic-bezier(.4, 0, .2, 1);
+}
+
+/* ── Foundations ─────────────────────────────────────────────── */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.app-body { min-width: 0; }
+.app-body > main { min-width: 0; width: 100%; }
+img, video, canvas, iframe, embed, object { max-width: 100%; }
+/* Long words / links / e-mail addresses wrap instead of pushing the page wider */
+main p, main dd, main h1, main h2, main h3, main h4 { overflow-wrap: break-word; }
+main pre { max-width: 100%; overflow-x: auto; }
+
+/* Wide tables scroll inside their own box (elms-nav.js adds the wrapper) */
+.table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+.table-scroll > table { min-width: 100%; }
+
+/* Text blocks inside flex rows may shrink (long subject names wrap
+   instead of pushing the card wider than the screen) */
+.list-item > div, .stat-card > .stat-info, .stat-card > div:last-child,
+.welcome-text, .page-header > *, .cp-row-left > * { min-width: 0; }
+
+/* ── Menu button + drawer parts (hidden on desktop) ──────────── */
+.nav-toggle, .nav-close { display: none; }
+.nav-backdrop { display: none; }
+
+.nav-toggle {
+  width: 40px; height: 40px; flex-shrink: 0;
+  align-items: center; justify-content: center;
+  margin-right: auto;
+  padding: 0;
+  border: 1px solid rgba(15, 23, 42, .12);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: background .15s;
+}
+.nav-toggle:hover { background: rgba(15, 23, 42, .05); }
+.nav-toggle:focus-visible { outline: 2px solid #003087; outline-offset: 2px; }
+.nav-toggle svg, .nav-close svg {
+  width: 20px; height: 20px;
+  fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+}
+html[data-theme="dark"] .nav-toggle { border-color: rgba(255, 255, 255, .14); color: #e2e8f0; }
+html[data-theme="dark"] .nav-toggle:hover { background: rgba(255, 255, 255, .06); }
+
+.nav-close {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  left: calc(100% + 10px);
+  width: 40px; height: 40px;
+  align-items: center; justify-content: center;
+  padding: 0; border: 0; border-radius: 50%;
+  background: #fff; color: #0f172a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-close:focus-visible { outline: 2px solid #8fb0ff; outline-offset: 2px; }
+/* With the class/subject menu open beside the icon rail, the X sits past both */
+.sidebar--rail .nav-close { left: calc(100% + var(--nav-cnav-w) + 10px); }
+
+/* ── Phones + tablets: sidebar → drawer ──────────────────────── */
+@media (max-width: 991.98px) {
+  body { flex-direction: row; }
+
+  /* The page itself scrolls (not an inner box), so phone browsers can hide
+     their address bar, pull-to-refresh works and the sticky top bar stays put */
+  html, body { height: auto; }
+  .app-body { overflow-x: clip; overflow-y: visible; }
+  .app-body > main.main-content,
+  .app-body > main.main-scroll { overflow: visible; flex: 1 0 auto; }
+
+  .sidebar,
+  .sidebar.sidebar--rail {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    z-index: 1200;
+    width: var(--nav-drawer-w);
+    min-width: 0;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow: visible;                 /* lets the X sit beside the drawer */
+    padding-bottom: env(safe-area-inset-bottom);
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform .24s var(--nav-ease), visibility 0s linear .24s, box-shadow .24s;
+  }
+  .sidebar.sidebar--rail { width: var(--nav-rail-w); }
+
+  /* the menu scrolls inside the drawer, never the page behind it */
+  .sidebar .sidebar-nav,
+  .sidebar .nav-menu {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .sidebar-link, .nav-menu .nav-link { min-height: 44px; }   /* comfortable tap size */
+
+  html.nav-open .sidebar {
+    transform: none;
+    visibility: visible;
+    box-shadow: 8px 0 32px rgba(0, 0, 0, .28);
+    transition: transform .24s var(--nav-ease), visibility 0s, box-shadow .24s;
+  }
+
+  /* Class menu (Teacher) / subject menu (Student) opens beside the icon rail */
+  html .cnav:not([hidden]) {
+    position: fixed;
+    top: 0; bottom: 0;
+    left: var(--nav-rail-w);
+    z-index: 1199;
+    width: var(--nav-cnav-w);
+    min-width: 0;
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: calc(1.25rem + env(safe-area-inset-bottom));
+    border-right: 0;
+    transform: translateX(calc(-100% - var(--nav-rail-w)));
+    visibility: hidden;
+    transition: transform .24s var(--nav-ease), visibility 0s linear .24s;
+  }
+  html.nav-open .cnav:not([hidden]) {
+    transform: none;
+    visibility: visible;
+    box-shadow: 8px 0 32px rgba(0, 0, 0, .22);
+    transition: transform .24s var(--nav-ease), visibility 0s;
+  }
+
+  .nav-toggle { display: inline-flex; }
+  .nav-close { display: none !important; }   /* no X button on the menu drawer; tap outside the menu to close it */
+
+  .nav-backdrop {
+    display: block;
+    position: fixed; inset: 0;
+    z-index: 1150;
+    background: rgba(15, 23, 42, .52);
+    opacity: 0;
+    transition: opacity .24s var(--nav-ease);
+    touch-action: none;                /* no scrolling the page through it */
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-backdrop[hidden] { display: none; }
+  html.nav-open .nav-backdrop { opacity: 1; }
+
+  /* page behind the open drawer stays put */
+  html.nav-open, html.nav-open body { overflow: hidden; }
+
+  /* top bar: menu button left, tools right */
+  .topbar, .topbar.admin-topbar { gap: .5rem; }
+  .topbar .topbar-left[style*="display:none"] + .topbar-right,
+  .topbar .tb-right, .topbar .topbar-actions { margin-left: auto; }
+}
+
+@media (max-width: 991.98px) and (prefers-reduced-motion: reduce) {
+  .sidebar, html .cnav:not([hidden]), .nav-backdrop { transition: none !important; }
+}
+
+/* ── Phones ──────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+  /* 16px stops iOS zooming into a field when it is tapped */
+  main input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]),
+  main select, main textarea,
+  .modal input:not([type="checkbox"]):not([type="radio"]), .modal select, .modal textarea {
+    font-size: max(16px, 1em);
+  }
+}
+
+/* ── Top-bar search: no zoom-in on focus, on any device ──────────
+   iOS Safari zooms the whole page when a field with a font under 16px gets
+   focus, and leaves it zoomed (the layout shifts left and gets cut off).
+   The top-bar search sits outside <main>, so the rule above never reached it.
+   Applies to every phone and tablet (by width) and to any touch screen
+   (iPad in desktop mode, large phones in landscape). Desktop mice keep .85rem. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+@media (max-width: 991.98px), (hover: none) and (pointer: coarse) {
+  .elms-app .tb-search input,
+  .elms-app .tt-search input,
+  .elms-app .st-search input { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  /* two stat tiles per row still fit: icon above the number */
+  .quick-stats { gap: .75rem; }
+  .quick-stats .stat-card { flex-direction: column; align-items: flex-start; gap: .6rem; padding: .95rem 1rem; }
+}
+
+
+/* ── Wide screens / TVs ─────────────────────────────────────────
+   The content width limit (--ui-content-max) and page padding live in
+   elms-ui.css. */
+/* TVs / 4K: scale the whole interface up so text and buttons stay readable
+   from a distance (layout stays the same as on a 1920–2560px monitor) */
+@media (min-width: 2400px) {
+  body { zoom: 1.25; --tv-zoom: 1.25; }
+}
+@media (min-width: 3200px) {
+  body { zoom: 1.5; --tv-zoom: 1.5; }
+}
+@media (min-width: 2400px) {
+  /* viewport units are zoomed too, so full-height parts are divided back */
+  body { min-height: calc(100vh / var(--tv-zoom)); }
+  .sidebar, .cnav { height: calc(100vh / var(--tv-zoom)); min-height: 0; overflow-y: auto; }
+}
+
+/* Page spacing on phones + room for the floating EduBot button: see elms-ui.css */
+
+/* Fluid page headings: see "Page header" in elms-ui.css */
+
+/* ── Phones: top-bar pop-ups span the screen instead of running off its left edge ── */
+@media (max-width: 600px) {
+  .topbar #tbBell.tb-dd,
+  .topbar #notifDropdown {
+    position: fixed;
+    left: .75rem; right: .75rem;
+    top: calc(var(--topbar-h, 64px) + 6px);
+    width: auto; max-width: none;
+    max-height: min(420px, calc(100dvh - var(--topbar-h, 64px) - 24px));
+  }
+  .topbar .tb-menu-panel, .topbar #teacherUserDropdown { max-width: calc(100vw - 1.5rem); }
+}
+
+/* EduBot's floating button steps aside while the menu drawer is open */
+html.nav-open .ebf-fab, html.nav-open #ebfWin { visibility: hidden; }

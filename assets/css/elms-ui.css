@@ -1,0 +1,669 @@
+/* ============================================================
+   Arandia College eLMS — Shared design system (Admin · Teacher · Student)
+   File: assets/css/elms-ui.css
+
+   Load order (includes/header.php, every role):
+     1. elms-<role>-base.css   the role's original styles
+     2. elms-<role>.css        the role's later updates
+     3. elms-ui.css            THIS FILE — one look for all three roles
+     4. elms-responsive.css    drawer menu + breakpoints
+
+   How it works
+   · One set of design tokens (--ui-*) for light and dark mode.
+   · Each role's older variable names (--surface, --white, --bg-card …)
+     are pointed at those tokens, scoped by the role class on <body>
+     (role-admin / role-teacher / role-student). Pages that use the old
+     names follow automatically.
+   · Shared parts (sidebar, top bar, page header, cards, buttons, fields,
+     tables, badges, modals) get the same size, spacing, radius and
+     colours on every role. Change them here, once.
+   ============================================================ */
+
+/* ── 1. Design tokens ──────────────────────────────────────── */
+:root {
+  /* brand */
+  --ui-primary: #003087;
+  --ui-primary-hover: #0044cc;
+  --ui-primary-soft: rgba(0, 48, 135, .08);
+  --ui-link: #003087;
+  --ui-accent: #FFD700;
+  --ui-success: #00875a;
+  --ui-success-soft: rgba(0, 135, 90, .12);
+  --ui-warning: #b38600;
+  --ui-warning-soft: rgba(179, 134, 0, .12);
+  --ui-danger: #c0392b;
+  --ui-danger-soft: rgba(192, 57, 43, .1);
+  --ui-purple: #7b2d8b;
+  --ui-purple-soft: rgba(123, 45, 139, .12);
+
+  /* surfaces + text */
+  --ui-bg: #f8fafc;
+  --ui-surface: #ffffff;
+  --ui-surface-2: #f8fafc;      /* hover rows, table heads, subtle fills */
+  --ui-surface-3: #f1f5f9;      /* pressed / chips */
+  --ui-field: #ffffff;          /* text fields */
+  --ui-border: #e2e8f0;
+  --ui-border-soft: #eef2f6;
+  --ui-text: #0f172a;
+  --ui-text-2: #64748b;
+  --ui-text-3: #94a3b8;
+  --ui-on-primary: #ffffff;
+
+  /* sidebar (same navy in light and dark) */
+  --ui-sidebar-bg: #101d34;
+  --ui-sidebar-text: #93a0bb;
+  --ui-sidebar-line: rgba(255, 255, 255, .08);
+
+  /* shape + depth */
+  --ui-radius-sm: 8px;          /* buttons, fields, chips */
+  --ui-radius: 12px;            /* inner boxes */
+  --ui-radius-lg: 14px;         /* cards, panels */
+  --ui-radius-xl: 18px;         /* modals */
+  --ui-shadow-sm: 0 1px 2px rgba(15, 23, 42, .04), 0 1px 3px rgba(15, 23, 42, .04);
+  --ui-shadow: 0 4px 16px rgba(15, 23, 42, .08);
+  --ui-shadow-lg: 0 20px 50px rgba(15, 23, 42, .22);
+
+  /* layout */
+  --ui-sidebar-w: 240px;
+  --ui-topbar-h: 64px;
+  --ui-content-max: 1600px;
+  --ui-page-x: 2rem;            /* page side padding */
+  --ui-page-y: 1.5rem;          /* page top padding */
+  --ui-gap: 1.25rem;            /* gap between cards */
+  --ui-control-h: 40px;         /* buttons + fields */
+  --ui-control-h-sm: 32px;
+
+  /* type */
+  --ui-font: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --ui-font-head: 'Nunito', 'Open Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+
+  --topbar-h: var(--ui-topbar-h);
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ui-primary: #1d4fb8;        /* filled buttons */
+  --ui-primary-hover: #2a5fd0;
+  --ui-primary-soft: rgba(143, 176, 255, .14);
+  --ui-link: #8fb0ff;           /* brand colour used as text */
+  --ui-success: #34d399;
+  --ui-success-soft: rgba(52, 211, 153, .14);
+  --ui-warning: #fbbf24;
+  --ui-warning-soft: rgba(251, 191, 36, .14);
+  --ui-danger: #f87171;
+  --ui-danger-soft: rgba(248, 113, 113, .14);
+  --ui-purple: #d6a4ff;
+  --ui-purple-soft: rgba(196, 140, 255, .14);
+
+  --ui-bg: #0f172a;
+  --ui-surface: #1e293b;
+  --ui-surface-2: #253247;
+  --ui-surface-3: #2c3a52;
+  --ui-field: #172133;
+  --ui-border: #334155;
+  --ui-border-soft: #2a3649;
+  --ui-text: #e2e8f0;
+  --ui-text-2: #a3b0c6;
+  --ui-text-3: #7d8aa3;
+
+  --ui-sidebar-bg: #0b1426;
+
+  --ui-shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
+  --ui-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+  --ui-shadow-lg: 0 20px 50px rgba(0, 0, 0, .55);
+}
+
+/* ── 2. Old variable names → tokens (per role) ─────────────── */
+body.role-admin {
+  --bg: var(--ui-bg);
+  --surface: var(--ui-surface);
+  --surface-hover: var(--ui-surface-2);
+  --border: var(--ui-border);
+  --border-muted: var(--ui-border-soft);
+  --text-primary: var(--ui-text);
+  --text-secondary: var(--ui-text-2);
+  --text-muted: var(--ui-text-3);
+  --radius: var(--ui-radius-sm);
+  --radius-lg: var(--ui-radius-lg);
+  --sidebar-bg: var(--ui-sidebar-bg);
+}
+html[data-theme="dark"] body.role-admin {
+  /* teacher/student names some admin pages borrow */
+  --white: var(--ui-surface);
+  --bg-card: var(--ui-surface);
+  --bg-light: var(--ui-bg);
+  --text-dark: var(--ui-text);
+  --text-main: var(--ui-text);
+  --text-light: var(--ui-text-2);
+}
+body.role-teacher {
+  --white: var(--ui-surface);
+  --bg-light: var(--ui-bg);
+  --text-dark: var(--ui-text);
+  --text-light: var(--ui-text-2);
+  /* admin-style names, so shared rules below read the same everywhere */
+  --surface: var(--ui-surface);
+  --border: var(--ui-border);
+}
+body.role-student {
+  --bg-body: var(--ui-bg);
+  --bg-card: var(--ui-surface);
+  --text-main: var(--ui-text);
+  --text-muted: var(--ui-text-2);
+  --border: var(--ui-border);
+  --radius: var(--ui-radius);
+  --surface: var(--ui-surface);
+}
+html[data-theme="dark"] body.role-student { --primary-light: rgba(143, 176, 255, .14); }
+
+/* ── 3. Page frame ─────────────────────────────────────────── */
+body.elms-app {
+  font-family: var(--ui-font);
+  font-size: 14px;
+  line-height: 1.5;
+  background: var(--ui-bg);
+  color: var(--ui-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.elms-app button, .elms-app input, .elms-app select, .elms-app textarea { font-family: inherit; }
+.elms-app .app-body { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+
+/* Main content: same padding on every role, never stretched edge-to-edge on wide screens */
+.elms-app .app-body > main.main-content,
+.elms-app .app-body > main.main-scroll {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: var(--ui-content-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--ui-page-y) var(--ui-page-x) 2rem;
+}
+
+/* ── 4. Sidebar (Admin + Teacher use .sidebar-link, Student .nav-link) ── */
+.elms-app .sidebar {
+  background: var(--ui-sidebar-bg);
+  border-right: 1px solid var(--ui-sidebar-line);
+}
+/* Desktop: fixed-width, sticky full-height column (Admin used min-height,
+   the others height). Below 992px the drawer sizes in elms-responsive.css apply. */
+@media (min-width: 992px) {
+  .elms-app .sidebar:not(.sidebar--rail) {
+    width: var(--ui-sidebar-w);
+    min-width: var(--ui-sidebar-w);
+    flex-shrink: 0;
+  }
+  .elms-app .sidebar { position: sticky; top: 0; height: 100vh; min-height: 0; }
+}
+.elms-app .sidebar:not(.sidebar--rail) .sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  min-height: 76px;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--ui-sidebar-line);
+}
+.elms-app .sidebar .sidebar-brand { margin-bottom: 0; gap: .75rem; }
+.elms-app .sidebar:not(.sidebar--rail) .sidebar-logo { width: 44px; height: 44px; flex-shrink: 0; }
+.elms-app .sidebar .sidebar-brand-text strong,
+.elms-app .sidebar .brand-text h1 {
+  font-family: var(--ui-font-head);
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+  margin: 0;
+}
+.elms-app .sidebar:not(.sidebar--rail) .sidebar-nav,
+.elms-app .sidebar:not(.sidebar--rail) .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: 1rem .75rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.elms-app .sidebar .nav-menu::-webkit-scrollbar { display: none; }
+.elms-app .sidebar:not(.sidebar--rail) .sidebar-link,
+.elms-app .sidebar:not(.sidebar--rail) .nav-link {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  min-height: 42px;
+  padding: .6rem .85rem;
+  border-radius: 10px;
+  font-family: var(--ui-font);
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ui-sidebar-text);
+  text-decoration: none;
+}
+.elms-app .sidebar .sidebar-link:hover,
+.elms-app .sidebar .nav-link:hover { background: rgba(255, 255, 255, .06); color: #fff; }
+.elms-app .sidebar .sidebar-link.active,
+.elms-app .sidebar .nav-link.active {
+  background: #fff;
+  color: #003087;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+}
+.elms-app .sidebar .sidebar-icon { width: 20px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; }
+.elms-app .sidebar:not(.sidebar--rail) .sidebar-icon .ico,
+.elms-app .sidebar:not(.sidebar--rail) .nav-link .icon { width: 18px; height: 18px; flex-shrink: 0; }
+.elms-app .sidebar .sidebar-link:focus-visible,
+.elms-app .sidebar .nav-link:focus-visible { outline: 2px solid #8fb0ff; outline-offset: -2px; }
+
+/* Class / subject menu beside the icon rail (Teacher + Student) */
+.elms-app .cnav { background: var(--ui-surface); border-right: 1px solid var(--ui-border); }
+.elms-app .cnav-menu { background: var(--ui-surface); border-color: var(--ui-border); box-shadow: var(--ui-shadow); }
+.elms-app .cnav-link { color: var(--ui-text); }
+.elms-app .cnav-link:hover, .elms-app .cnav-opt:hover { background: var(--ui-surface-2); }
+.elms-app .cnav-all, .elms-app .cnav-ic, .elms-app .cnav-menu-h, .elms-app .cnav-opt small { color: var(--ui-text-2); }
+.elms-app .cnav-opt { color: var(--ui-text); }
+
+/* ── 5. Top bar ────────────────────────────────────────────── */
+.elms-app .topbar,
+.elms-app .topbar.admin-topbar {
+  display: flex;
+  align-items: center;
+  height: var(--ui-topbar-h);
+  min-height: var(--ui-topbar-h);
+  padding: 0 var(--ui-page-x);
+  gap: .75rem;
+  background: var(--ui-surface);
+  color: var(--ui-text);
+  border-bottom: 1px solid var(--ui-border);
+  box-shadow: none;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+/* One size for the round/square icon buttons (bell, avatar) on every role */
+.elms-app .topbar .tb-icon-btn,
+.elms-app .topbar .notif-btn,
+.elms-app .topbar .btn-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  color: var(--ui-text-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  transition: background .15s, color .15s, border-color .15s;
+}
+.elms-app .topbar .tb-icon-btn:hover,
+.elms-app .topbar .notif-btn:hover,
+.elms-app .topbar .btn-icon:hover { background: var(--ui-surface-2); color: var(--ui-text); }
+.elms-app .topbar .tb-icon-btn .ico,
+.elms-app .topbar .notif-btn .ico,
+.elms-app .topbar .notif-btn svg,
+.elms-app .topbar .btn-icon:not(.user-btn) svg { width: 18px; height: 18px; }
+/* Avatar: initials on a soft brand tile (Admin chip, Teacher + Student button) */
+.elms-app .topbar .btn-icon.user-btn {
+  background: var(--ui-primary-soft);
+  border-color: transparent;
+  color: var(--ui-link);
+  font-family: var(--ui-font-head);
+  font-weight: 800;
+  font-size: .82rem;
+}
+.elms-app .topbar .tb-profile {
+  height: 40px;
+  padding: 0 .65rem 0 .25rem;
+  border-color: transparent;
+  background: transparent;
+  color: var(--ui-text);
+}
+.elms-app .topbar .tb-profile:hover { background: var(--ui-surface-2); }
+.elms-app .topbar .tb-avatar {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--ui-primary-soft); color: var(--ui-link);
+  font-family: var(--ui-font-head); font-weight: 800; font-size: .78rem;
+}
+.elms-app .tb-profile-name,
+.elms-app .tt-who-name,
+.elms-app .st-who-name { font-size: .86rem; font-weight: 700; color: var(--ui-text); }
+.elms-app .tt-who-role,
+.elms-app .st-who-role { font-size: .74rem; color: var(--ui-text-2); }
+
+/* Search field in the top bar (Admin .tb-search, Teacher .tt-search, Student .st-search).
+   On phones (<= 700px) each role folds it into a 40px search button, so the
+   text colours only apply on wider screens or while the field is open. */
+.elms-app .tb-search input,
+.elms-app .tt-search input,
+.elms-app .st-search input {
+  height: 40px;
+  border: 1px solid var(--ui-border);
+  border-radius: 10px;
+  background: var(--ui-surface-2);
+  font-size: .85rem;
+}
+.elms-app .tb-search input:focus,
+.elms-app .tt-search input:focus,
+.elms-app .st-search input:focus { border-color: var(--ui-link); background: var(--ui-surface); color: var(--ui-text); }
+@media (min-width: 701px) {
+  .elms-app .tb-search input,
+  .elms-app .tt-search input,
+  .elms-app .st-search input { color: var(--ui-text); }
+  .elms-app .tb-search input::placeholder,
+  .elms-app .tt-search input::placeholder,
+  .elms-app .st-search input::placeholder { color: var(--ui-text-3); }
+}
+@media (max-width: 700px) {
+  .elms-app .tb-search input:focus::placeholder,
+  .elms-app .tt-search input:focus::placeholder,
+  .elms-app .st-search input:focus::placeholder,
+  .elms-app .st-search.st-open input::placeholder { color: var(--ui-text-3); }
+}
+.elms-app .tb-kbd, .elms-app .tt-kbd, .elms-app .st-kbd { background: var(--ui-surface); border-color: var(--ui-border); color: var(--ui-text-3); }
+
+/* Top-bar drop-downs (search results, notifications, account menu) */
+.elms-app .tb-dd, .elms-app .tt-results, .elms-app .st-results,
+.elms-app .notif-dropdown, .elms-app .notif-panel, .elms-app #teacherUserDropdown, .elms-app #userDropdown {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius-lg);
+  box-shadow: var(--ui-shadow);
+  color: var(--ui-text);
+}
+/* Account menu (avatar menu) — same on every role:
+   Admin #tbProfile, Teacher #teacherUserDropdown, Student #userDropdown */
+.elms-app .user-menu { padding: 0; overflow: hidden; }
+.elms-app .user-dd-head { display: none; padding: .85rem 1rem .75rem; border-bottom: 1px solid var(--ui-border-soft); }
+/* The name is already in the top bar; the menu repeats it only where the
+   top bar hides it (<= 1100px, same breakpoint as .tb-profile-name/.tt-who/.st-who) */
+@media (max-width: 1100px) { .elms-app .user-dd-head { display: block; } }
+.elms-app .user-dd-name { font-family: var(--ui-font); font-size: .9rem; font-weight: 700; color: var(--ui-text); line-height: 1.3; }
+.elms-app .user-dd-role { font-family: var(--ui-font); font-size: .76rem; font-weight: 500; color: var(--ui-text-2); margin-top: .15rem; }
+.elms-app .user-dd-list { padding: .35rem 0; }
+.elms-app .user-menu .user-dd-item,
+.elms-app .user-menu .tb-dd-item {
+  display: flex; align-items: center; gap: .65rem;
+  width: 100%; min-height: 42px; margin: 0;
+  padding: .55rem 1rem;
+  border: 0; border-radius: 0;
+  background: transparent;
+  font-family: var(--ui-font); font-size: .875rem; font-weight: 600; line-height: 1.3;
+  color: var(--ui-text); text-align: left; text-decoration: none;
+  cursor: pointer; transition: background .15s;
+  box-shadow: none;
+}
+.elms-app .user-menu .user-dd-item:hover,
+.elms-app .user-menu .tb-dd-item:hover,
+.elms-app .user-menu .user-dd-item:focus-visible,
+.elms-app .user-menu .tb-dd-item:focus-visible { background: var(--ui-surface-2); outline: none; }
+.elms-app .user-menu .user-dd-item svg,
+.elms-app .user-menu .tb-dd-item .ico { width: 18px; height: 18px; flex-shrink: 0; color: var(--ui-text-2); }
+.elms-app .user-menu .tb-dd-t { font-size: inherit; font-weight: inherit; color: inherit; }
+.elms-app .user-menu .user-dd-item.danger,
+.elms-app .user-menu .tb-dd-item.danger,
+.elms-app .user-menu .user-dd-item.danger svg,
+.elms-app .user-menu .tb-dd-item.danger .ico { color: var(--ui-danger); }
+.elms-app .user-menu .user-dd-item.danger:hover,
+.elms-app .user-menu .tb-dd-item.danger:hover { background: var(--ui-danger-soft); }
+.elms-app .user-menu .dm-switch { margin-left: auto; }
+.elms-app .user-dd-divider { border-top: 1px solid var(--ui-border-soft); margin: .3rem 0; }
+.elms-app .user-menu .tb-dark-toggle { justify-content: flex-start; }
+
+/* ── 6. Page header ────────────────────────────────────────── */
+.elms-app .page-title,
+.elms-app .cp-row-title {
+  font-family: var(--ui-font-head);
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.6rem);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  color: var(--ui-text);
+}
+html .elms-app .main-scroll .page-title { font-size: clamp(1.35rem, 1.1rem + 1vw, 1.6rem); }
+.elms-app .page-sub,
+.elms-app .cp-row-sub { font-size: .875rem; color: var(--ui-text-2); }
+
+.elms-app .page-header,
+.elms-app .panel-header { margin-bottom: 1.5rem; }
+.elms-app .page-header .page-title,
+.elms-app .panel-header .page-title { margin-bottom: .2rem; }
+.elms-app .panel-header .page-sub { margin-bottom: 0; }
+
+/* ── 7. Cards + panels ─────────────────────────────────────── */
+.elms-app .card,
+.elms-app .card-panel,
+.elms-app .table-card,
+.elms-app .form-card,
+.elms-app .accordion {
+  background: var(--ui-surface);
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius-lg);
+  box-shadow: var(--ui-shadow-sm);
+}
+.elms-app .card-panel-header,
+.elms-app .table-header { border-bottom-color: var(--ui-border-soft); background: transparent; }
+.elms-app .card-panel-header h3,
+.elms-app .table-header h3 { font-family: var(--ui-font-head); font-weight: 800; font-size: 1rem; color: var(--ui-text); }
+
+/* ── 8. Buttons ────────────────────────────────────────────── */
+.elms-app .btn {
+  font-family: var(--ui-font-head);
+  font-weight: 700;
+  font-size: .84rem;
+  line-height: 1.2;
+  min-height: 36px;
+  padding: .5rem 1rem;
+  border-radius: var(--ui-radius-sm);
+  justify-content: center;
+}
+.elms-app .btn-sm { min-height: 30px; padding: .3rem .7rem; font-size: .76rem; }
+.elms-app .btn-primary { background: var(--ui-primary); border-color: var(--ui-primary); color: #fff; }
+.elms-app .btn-primary:hover { background: var(--ui-primary-hover); border-color: var(--ui-primary-hover); color: #fff; }
+.elms-app .btn:disabled, .elms-app .btn[disabled] { opacity: .55; cursor: not-allowed; }
+.elms-app .btn:focus-visible { outline: 2px solid var(--ui-link); outline-offset: 2px; }
+.elms-app .btn-outline { background: var(--ui-surface); border: 1px solid var(--ui-border); color: var(--ui-text); }
+.elms-app .btn-outline:hover { background: var(--ui-surface-2); }
+.elms-app .btn-gray, .elms-app .btn-reset-form { background: var(--ui-surface-3); color: var(--ui-text); border: 1px solid var(--ui-border); }
+.elms-app .btn-gray:hover, .elms-app .btn-reset-form:hover { background: var(--ui-border-soft); }
+
+/* ── 9. Form fields ────────────────────────────────────────── */
+.elms-app .form-input,
+.elms-app .finput,
+.elms-app .form-control,
+.elms-app .pf-input,
+.elms-app .search-input {
+  min-height: var(--ui-control-h);
+  padding: .55rem .85rem;
+  border: 1px solid var(--ui-border);
+  border-radius: var(--ui-radius-sm);
+  background: var(--ui-field);
+  color: var(--ui-text);
+  font-size: .875rem;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+  max-width: 100%;
+}
+.elms-app textarea.form-input,
+.elms-app textarea.finput,
+.elms-app textarea.form-control,
+.elms-app textarea.pf-input { min-height: 88px; line-height: 1.5; }
+.elms-app .form-input:focus,
+.elms-app .finput:focus,
+.elms-app .form-control:focus,
+.elms-app .pf-input:focus,
+.elms-app .search-input:focus {
+  border-color: var(--ui-link);
+  background: var(--ui-field);
+  box-shadow: 0 0 0 3px var(--ui-primary-soft);
+}
+.elms-app .form-input::placeholder, .elms-app .finput::placeholder,
+.elms-app .form-control::placeholder, .elms-app .pf-input::placeholder,
+.elms-app .search-input::placeholder { color: var(--ui-text-3); }
+.elms-app .form-input:disabled, .elms-app .finput:disabled,
+.elms-app .form-control:disabled, .elms-app .pf-input:disabled,
+.elms-app .pf-input[readonly] { background: var(--ui-surface-2); color: var(--ui-text-2); }
+.elms-app .form-label, .elms-app .form-lbl, .elms-app .pf-label { color: var(--ui-text-2); font-weight: 700; font-size: .78rem; }
+html[data-theme="dark"] .elms-app input,
+html[data-theme="dark"] .elms-app select,
+html[data-theme="dark"] .elms-app textarea { color-scheme: dark; }
+html[data-theme="dark"] .elms-app select option { background: var(--ui-surface); color: var(--ui-text); }
+
+/* ── 10. Tables ────────────────────────────────────────────── */
+.elms-app main thead { background: var(--ui-surface-2); }
+.elms-app main th { background: transparent; color: var(--ui-text-3); border-bottom: 1px solid var(--ui-border-soft); }
+.elms-app main td { border-bottom-color: var(--ui-border-soft); }
+.elms-app main tr:hover td { background: var(--ui-surface-2); }
+
+/* ── 11. Modals ────────────────────────────────────────────── */
+.elms-app .modal-overlay { padding: 1rem; background: rgba(15, 23, 42, .55); }
+.elms-app .modal {
+  background: var(--ui-surface);
+  color: var(--ui-text);
+  border-radius: var(--ui-radius-xl);
+  box-shadow: var(--ui-shadow-lg);
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+.elms-app .modal-head, .elms-app .modal-header {
+  background: var(--ui-surface);
+  border-bottom-color: var(--ui-border-soft);
+  color: var(--ui-text);
+}
+.elms-app .modal-footer, .elms-app .modal-foot { border-top-color: var(--ui-border-soft); }
+.elms-app .modal-title, .elms-app .modal-head h2 { font-family: var(--ui-font-head); color: var(--ui-text); }
+.elms-app .modal-close { color: var(--ui-text-2); }
+
+/* ── 12. Small helpers ─────────────────────────────────────── */
+.elms-app .empty-state { color: var(--ui-text-3); }
+.elms-app a { -webkit-tap-highlight-color: transparent; }
+
+/* ── 13. Spacing by screen size (tokens only — the rules above follow) ── */
+@media (max-width: 1199.98px) { :root { --ui-page-x: 1.5rem; } }
+@media (max-width: 767.98px)  { :root { --ui-page-x: 1rem; --ui-page-y: 1rem; --ui-gap: 1rem; } }
+@media (max-width: 399.98px)  { :root { --ui-page-x: .75rem; } }
+@media (min-width: 1920px)    { :root { --ui-page-x: 2.5rem; --ui-page-y: 2rem; } }
+
+/* ── 14. Dark mode: brand colour as text ───────────────────────
+   Same rule as the Admin side: in dark mode --primary becomes a light
+   blue so links, icons and labels written in it stay readable. The few
+   places that use it as a FILLED background with white text get the
+   strong blue back below. */
+html[data-theme="dark"] body.role-teacher,
+html[data-theme="dark"] body.role-student { --primary: var(--ui-link); --accent-color: var(--ui-link); }
+html[data-theme="dark"] .elms-app .btn-green,
+html[data-theme="dark"] .elms-app .btn-blue:hover,
+html[data-theme="dark"] .elms-app .logo-box,
+html[data-theme="dark"] .elms-app .avatar,
+html[data-theme="dark"] .elms-app .cal-day.cal-selected,
+html[data-theme="dark"] .elms-app .gr-hero { background: var(--ui-primary); color: #fff; }
+html[data-theme="dark"] .elms-app .welcome-card { background: linear-gradient(135deg, #003087, #1d4fb8); color: #fff; }
+html[data-theme="dark"] .elms-app .toast { background: #e2e8f0; color: #0f172a; }
+html[data-theme="dark"] .elms-app .footer-bar { background: var(--ui-sidebar-bg); }
+
+/* ── 15. Dark mode: tinted chips, pills and highlights ─────────
+   Light mode uses pastel fills (e.g. #e8f0ff, #e6fff4). On a dark page
+   those become bright patches, so every family gets the same soft,
+   see-through tint and a light text colour instead. */
+html[data-theme="dark"] .elms-app {
+  --ui-tint-blue: rgba(143, 176, 255, .14);   --ui-tint-blue-text: #c7d7ff;
+  --ui-tint-green: rgba(52, 211, 153, .14);   --ui-tint-green-text: #6ee7b7;
+  --ui-tint-yellow: rgba(251, 191, 36, .14);  --ui-tint-yellow-text: #fcd34d;
+  --ui-tint-red: rgba(248, 113, 113, .14);    --ui-tint-red-text: #fca5a5;
+  --ui-tint-purple: rgba(196, 140, 255, .14); --ui-tint-purple-text: #e0c3ff;
+  --ui-tint-gray: rgba(148, 163, 184, .14);   --ui-tint-gray-text: #cbd5e1;
+}
+/* blue */
+html[data-theme="dark"] .elms-app :is(.badge-blue, .btn-blue, .list-icon, .pub-yes, .tm-num, .sm-num.opened, .td-ico.blue, .cp-pill.info, .ebf-chip, .awt-badge-blue, .notif-item.unread, .qty-card:hover, .acc-mini-bar) {
+  background: var(--ui-tint-blue); color: var(--ui-tint-blue-text); border-color: transparent;
+}
+html[data-theme="dark"] .elms-app .notif-item.unread:hover { background: rgba(143, 176, 255, .2); }
+html[data-theme="dark"] .elms-app .btn-blue:hover { background: var(--ui-primary); color: #fff; }
+/* green */
+html[data-theme="dark"] .elms-app :is(.badge-green, .score-pill.good, .sa-Present, .sm-num.done, .at-c.P, .cp-pill.ok, .awt-status.active, .status-active.badge-status) {
+  background: var(--ui-tint-green); color: var(--ui-tint-green-text); border-color: transparent;
+}
+/* yellow */
+html[data-theme="dark"] .elms-app :is(.badge-yellow, .score-pill.ok, .sa-Late, .at-c.L, .cp-pill, .cnav-badge, .awt-notice, .td-ico.amber) {
+  background: var(--ui-tint-yellow); color: var(--ui-tint-yellow-text); border-color: transparent;
+}
+html[data-theme="dark"] .elms-app .cp-pill.ok { background: var(--ui-tint-green); color: var(--ui-tint-green-text); }
+/* red */
+html[data-theme="dark"] .elms-app :is(.badge-red, .btn-red, .score-pill.low, .sa-Absent, .at-c.A, .modal-err, .td-ico.red, .chat-hd-item-del:hover) {
+  background: var(--ui-tint-red); color: var(--ui-tint-red-text); border-color: transparent;
+}
+html[data-theme="dark"] .elms-app .btn-red:hover { background: #b91c1c; color: #fff; }
+/* purple */
+html[data-theme="dark"] .elms-app :is(.badge-purple, .btn-purple, .sa-Excused) {
+  background: var(--ui-tint-purple); color: var(--ui-tint-purple-text); border-color: transparent;
+}
+/* gray */
+html[data-theme="dark"] .elms-app :is(.badge-gray, .pub-no, .awt-status.revoked, .gr-state.none) {
+  background: var(--ui-tint-gray); color: var(--ui-tint-gray-text); border-color: transparent;
+}
+html[data-theme="dark"] .elms-app .td-ico.teal { background: rgba(45, 212, 191, .14); color: #5eead4; }
+html[data-theme="dark"] .elms-app .btn-gray:hover { background: var(--ui-border); }
+html[data-theme="dark"] .elms-app .tm-meter { background: var(--ui-surface-3); }
+html[data-theme="dark"] .elms-app .tm-meter div { background: #8fb0ff; }
+html[data-theme="dark"] .elms-app .pf-input:focus-visible { background: var(--ui-field); }
+
+/* Student account button + EduBot page parts that kept a white fill */
+html[data-theme="dark"] .elms-app .user-btn:hover { background: var(--ui-surface-2); }
+html[data-theme="dark"] .elms-app #panel-chatbot .ebx-composer:focus-within { background: var(--ui-bg); }
+html[data-theme="dark"] .elms-app #panel-chatbot .chat-hd-item:hover { background: var(--ui-surface-2); }
+html[data-theme="dark"] .elms-app #panel-chatbot .chat-hd-item.active { background: var(--ui-tint-blue); }
+html[data-theme="dark"] .elms-app .chat-date-divider::before,
+html[data-theme="dark"] .elms-app .chat-date-divider::after { background: var(--ui-border); }
+html[data-theme="dark"] .elms-app .dash-carousel-arrow { background: rgba(15, 23, 42, .72); color: #fff; border-color: rgba(255, 255, 255, .18); }
+html[data-theme="dark"] .elms-app .dash-carousel-arrow:hover { background: rgba(15, 23, 42, .9); }
+html[data-theme="dark"] .elms-app #panel-chatbot .chat-new-btn { background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .3); color: #fff; }
+html[data-theme="dark"] .elms-app #panel-chatbot .chat-new-btn:hover { background: rgba(255, 255, 255, .22); }
+
+/* Phones: leave room under the page so the floating EduBot button never
+   covers the last button (was in elms-responsive.css; lives here so it
+   wins over the shared page padding above) */
+@media (max-width: 767.98px) {
+  .elms-app:has(.ebf-fab) .app-body > main.main-content,
+  .elms-app:has(.ebf-fab) .app-body > main.main-scroll { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+}
+
+/* Account menu: same Dark Mode icon + switch colour on every role */
+html[data-theme="dark"] .elms-app .user-menu .dm-icon-sun { display: none; }
+html[data-theme="dark"] .elms-app .user-menu .dm-icon-moon { display: inline-block; }
+.elms-app .user-menu .dm-switch { background: var(--ui-border); }
+html[data-theme="dark"] .elms-app .user-menu .dm-switch { background: #3b82f6; }
+
+/* ── Notification bell: same number badge on every role ─────────
+   Admin #tbBellBadge (.tb-badge), Teacher + Student #notifBadge (.notif-badge).
+   The number goes down by one each time a notification is opened. */
+.elms-app .topbar .tb-badge,
+.elms-app .topbar .notif-badge {
+  position: absolute; top: -6px; right: -6px;
+  min-width: 19px; height: 19px; padding: 0 5px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 100px; border: 2px solid var(--ui-surface);
+  background: #dc2626; color: #fff;
+  font-family: var(--ui-font); font-size: .66rem; font-weight: 800; line-height: 1;
+  pointer-events: none;
+}
+.elms-app .topbar .notif-badge.hidden { display: none; }
+
+/* Admin "Needs attention" list: opened items look read */
+.elms-app .tb-dd-h-row { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.elms-app .tb-mark-all { background: none; border: 0; padding: 0; cursor: pointer; font: inherit; font-size: .76rem; font-weight: 700; color: var(--ui-link); }
+.elms-app .tb-mark-all:hover { text-decoration: underline; }
+.elms-app #tbBell .tb-note .tb-dd-t { font-weight: 700; }
+.elms-app #tbBell .tb-note.is-read .tb-dd-t { font-weight: 500; color: var(--ui-text-2); }
+.elms-app #tbBell .tb-note.is-read .tb-dot { opacity: .35; }
+
+/* ── Scrolling: sidebar and top bar stay in place ──────────────
+   The page itself scrolls. Admin/Teacher had html, body { height: 100% }
+   and Student had .app-body { overflow: hidden }; both stop
+   position: sticky from working, so on long pages the sidebar ended
+   half-way down and the top bar scrolled away. (This file is only
+   loaded on the Admin / Teacher / Student pages.) */
+html { height: auto; }
+body.elms-app { height: auto; min-height: 100vh; }
+.elms-app .app-body { overflow: visible; overflow-x: clip; }

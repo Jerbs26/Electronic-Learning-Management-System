@@ -1,0 +1,183 @@
+@ HS9-FIL fil
+# Panitikang Asyano | Mga akdang pampanitikan mula sa iba't ibang bansa sa Asya.
+> Ang mga bansa sa Asya ay may kani-kaniyang panitikan na nagpapakita ng kanilang kultura at pinahahalagahan.
+= Panitikang Asyano :: mga akdang pampanitikan mula sa mga bansa sa Asya.
+= Tanka :: tulang Hapon na may limang taludtod at 31 pantig (5-7-5-7-7).
+= Haiku :: tulang Hapon na may tatlong taludtod at 17 pantig (5-7-5).
+= Sanaysay :: akdang naglalahad ng sariling kuro-kuro o pananaw.
+! Halimbawa ng haiku :: "Ulan sa bubong / Ang pusa'y natutulog / Hintay ang araw." Mayroon itong 5, 7, at 5 na pantig.
+? Ilang pantig mayroon ang haiku? :: 17 (5-7-5)
+? Saang bansa nagmula ang tanka at haiku? :: Japan (Hapon)
+? Ano ang sanaysay? :: Akdang naglalahad ng sariling kuro-kuro o pananaw.
+
+# Noli Me Tangere: Kaligiran ng Akda | Ang unang nobela ni Rizal at ang layunin nito.
+> Isinulat ni Dr. Jose Rizal ang Noli Me Tangere upang ipakita ang kalagayan ng Pilipinas sa ilalim ng Espanya.
+= Noli Me Tangere :: unang nobela ni Rizal, nalathala noong 1887 sa Berlin, Alemanya.
+= Kahulugan ng pamagat :: salitang Latin na nangangahulugang "Huwag Mo Akong Salingin."
+= Nobela :: mahabang akdang piksiyon na may maraming kabanata at tauhan.
+= Kanser ng lipunan :: tawag ni Rizal sa mga suliranin at pang-aabuso sa lipunan.
+! Halimbawa :: Inialay ni Rizal ang nobela sa Inang Bayan. Naging inspirasyon niya ang nobelang Uncle Tom's Cabin, na naglantad ng pang-aalipin sa Amerika.
+? Kailan nalathala ang Noli Me Tangere? :: 1887
+? Ano ang ibig sabihin ng "Noli Me Tangere"? :: Huwag Mo Akong Salingin
+? Kanino inialay ni Rizal ang nobela? :: Sa Inang Bayan
+
+@ HS9-ENGLISH
+# Anglo-American Literature | Works from Britain and the United States.
+> Many famous poems, plays, and stories in English come from Britain and America.
+= Anglo-American literature :: literature from Britain (Anglo) and the United States (American).
+= Poetry :: writing that uses rhythm, imagery, and sound to express ideas and feelings.
+= Sonnet :: a poem of 14 lines, often about love.
+= Short story :: a brief work of fiction that can be read in one sitting.
+! Example :: William Shakespeare wrote many sonnets and plays. Robert Frost, an American poet, wrote "The Road Not Taken," about making choices in life.
+? What does "Anglo" refer to? :: Britain or England
+? How many lines does a sonnet have? :: 14
+? Who wrote "The Road Not Taken"? :: Robert Frost
+
+# Elements of Drama | The parts that make up a play.
+> A drama, or play, is a story written to be acted out on stage.
+= Drama :: a story told through dialogue and action, meant to be performed.
+= Dialogue :: the words spoken by the characters.
+= Stage directions :: notes that tell actors how to move or speak.
+= Act and scene :: the main parts (acts) and smaller parts (scenes) of a play.
+= Conflict :: the problem or struggle in the story.
+! Example :: MARIA (looking out the window): "Is it still raining?" — The words in parentheses are stage directions; the line after the colon is dialogue.
+? What is dialogue? :: The words spoken by the characters.
+? What do stage directions tell actors? :: How to move or speak.
+? What is the conflict in a story? :: The problem or struggle.
+
+@ HS9-MATH
+# Quadratic Equations | Equations where the highest power of the variable is 2.
+> When a ball is thrown or a garden's area is computed, quadratic equations often appear.
+= Quadratic equation :: an equation in the form ax² + bx + c = 0, where a ≠ 0.
+= Roots :: the values of x that make the equation true.
+= Factoring method :: solving by writing the equation as a product equal to zero.
+= Quadratic formula :: x = [−b ± √(b² − 4ac)] / 2a.
+! Example :: Solve x² − 5x + 6 = 0. Factor: (x − 2)(x − 3) = 0. So x = 2 or x = 3.
+? Is x² + 3x − 4 = 0 a quadratic equation? :: Yes
+? Solve x² − 9 = 0. :: x = 3 or x = −3
+? In 2x² + 3x − 5 = 0, what are a, b, and c? :: a = 2, b = 3, c = −5
+
+# Quadratic Functions | Functions whose graph is a parabola.
+> The path of a basketball shot forms a curve called a parabola, which is the graph of a quadratic function.
+= Quadratic function :: a function in the form y = ax² + bx + c, where a ≠ 0.
+= Parabola :: the U-shaped graph of a quadratic function.
+= Vertex :: the highest or lowest point of the parabola.
+= Axis of symmetry :: the vertical line through the vertex that divides the parabola into two equal halves.
+* If a is positive, the parabola opens upward. If a is negative, it opens downward.
+! Example :: y = x² opens upward and its vertex is (0, 0). y = −x² + 4 opens downward and its vertex is (0, 4).
+? What is the graph of a quadratic function called? :: Parabola
+? Does y = −2x² open upward or downward? :: Downward
+? What is the vertex of y = x² + 3? :: (0, 3)
+
+@ HS9-SCI
+# Respiratory and Circulatory Systems | How the body takes in oxygen and moves blood.
+> Every cell in your body needs oxygen. Two body systems work together to deliver it.
+= Respiratory system :: takes in oxygen and releases carbon dioxide; includes the nose, trachea, and lungs.
+= Circulatory system :: moves blood around the body; includes the heart, blood, and blood vessels.
+= Alveoli :: tiny air sacs in the lungs where oxygen enters the blood.
+= Arteries and veins :: arteries carry blood away from the heart; veins carry blood back to the heart.
+! Example :: When you run, you breathe faster to take in more oxygen, and your heart beats faster to deliver it to your muscles.
+? Where does oxygen enter the blood? :: In the alveoli of the lungs
+? What do arteries do? :: Carry blood away from the heart.
+? Why does your heart beat faster when you exercise? :: To deliver more oxygen to the muscles.
+
+# Heredity | How traits are passed from parents to children.
+> You may have your mother's eyes or your father's height. These traits are passed on through heredity.
+= Heredity :: the passing of traits from parents to offspring.
+= Gene :: a part of DNA that carries a trait.
+= Dominant trait :: a trait that shows even if only one parent passes it.
+= Recessive trait :: a trait that shows only if both parents pass it.
+= Gregor Mendel :: known as the "Father of Genetics" for his experiments with pea plants.
+! Example :: T = tall (dominant), t = short (recessive). A plant with Tt is tall. Only a plant with tt is short.
+? What is heredity? :: The passing of traits from parents to offspring.
+? Who is the Father of Genetics? :: Gregor Mendel
+? Is a plant with Tt tall or short? :: Tall
+
+@ HS9-AP fil
+# Kahulugan ng Ekonomiks | Ang pag-aaral ng matalinong paggamit ng limitadong yaman.
+> Hindi lahat ng gusto natin ay makukuha natin. Dito pumapasok ang ekonomiks.
+= Ekonomiks :: pag-aaral kung paano ginagamit ang limitadong yaman upang matugunan ang pangangailangan ng tao.
+= Kakapusan :: kakulangan ng yaman kumpara sa walang hanggang pangangailangan.
+= Opportunity cost :: ang halaga ng bagay na isinakripisyo kapalit ng pinili.
+= Trade-off :: pagpili ng isang bagay kapalit ng iba.
+! Halimbawa :: May ₱100 si Carlo. Pinili niyang bumili ng libro kaysa manood ng sine. Ang opportunity cost ay ang panonood ng sine.
+? Ano ang ekonomiks? :: Pag-aaral kung paano ginagamit ang limitadong yaman.
+? Ano ang pangunahing suliranin ng ekonomiks? :: Kakapusan
+? Ano ang opportunity cost? :: Ang halaga ng bagay na isinakripisyo kapalit ng pinili.
+
+# Pangangailangan at Kagustuhan | Ang pagkakaiba ng kailangan at ng gusto lamang.
+> Mahalagang matutong pumili sa pagitan ng kailangan at gusto upang hindi masayang ang pera.
+= Pangangailangan :: mga bagay na kailangan upang mabuhay, gaya ng pagkain, tubig, damit, at tirahan.
+= Kagustuhan :: mga bagay na nagbibigay-ginhawa ngunit hindi kailangan upang mabuhay.
+= Hirarkiya ng Pangangailangan :: teorya ni Abraham Maslow na nag-aayos ng pangangailangan mula pinakamahalaga.
+! Halimbawa :: Ang bigas ay pangangailangan. Ang bagong cellphone kahit gumagana pa ang luma ay kagustuhan.
+? Magbigay ng isang pangangailangan. :: Halimbawa: pagkain, tubig, damit, tirahan
+? Ano ang kagustuhan? :: Mga bagay na nagbibigay-ginhawa ngunit hindi kailangan upang mabuhay.
+? Sino ang bumuo ng Hirarkiya ng Pangangailangan? :: Abraham Maslow
+
+@ HS9-ESP fil
+# Lipunan at Kabutihang Panlahat | Ang layunin ng lipunan at ang kabutihang para sa lahat.
+> Hindi tayo nabubuhay nang mag-isa. Kasapi tayo ng lipunan na may iisang layunin.
+= Lipunan :: pangkat ng mga taong may iisang layunin at magkakaugnay.
+= Kabutihang panlahat :: kabutihang nakatutulong sa lahat ng kasapi ng lipunan.
+= Pakikilahok :: aktibong pagsali sa gawain ng komunidad.
+! Halimbawa :: Ang paglilinis ng barangay tuwing Sabado ay nakatutulong sa kalusugan ng lahat, hindi lang ng iilan.
+? Ano ang lipunan? :: Pangkat ng mga taong may iisang layunin at magkakaugnay.
+? Ano ang kabutihang panlahat? :: Kabutihang nakatutulong sa lahat ng kasapi ng lipunan.
+? Magbigay ng isang paraan ng pakikilahok sa komunidad. :: Halimbawa: clean-up drive, pagboboluntaryo
+
+# Karapatan at Tungkulin | Ang bawat karapatan ay may kaakibat na tungkulin.
+> Bilang tao at mamamayan, may mga karapatan tayo. Ngunit kasama nito ang mga tungkuling dapat gampanan.
+= Karapatan :: kapangyarihang moral na gawin o tamasahin ang isang bagay.
+= Tungkulin :: obligasyong moral na dapat gawin.
+= Paggalang :: pagkilala sa karapatan ng iba.
+! Halimbawa :: Karapatan ng mag-aaral na matuto; tungkulin niyang mag-aral nang mabuti at igalang ang guro at kaklase.
+? Ano ang karapatan? :: Kapangyarihang moral na gawin o tamasahin ang isang bagay.
+? Ano ang kaakibat ng bawat karapatan? :: Tungkulin
+? Kung karapatan mo ang malayang pagpapahayag, ano ang iyong tungkulin? :: Magsalita nang may katotohanan at paggalang.
+
+@ HS9-MAPEH
+# Music of the Medieval to Classical Periods | How Western music developed over time.
+> Western music changed a lot from the songs of medieval churches to the symphonies of the Classical period.
+= Medieval period :: the time of Gregorian chant, simple religious songs sung in unison.
+= Renaissance :: music with richer harmony and many voice parts.
+= Baroque period :: music with lots of ornaments; composers include Bach and Vivaldi.
+= Classical period :: music with balance and clarity; composers include Mozart and Haydn.
+! Example :: Vivaldi's "The Four Seasons" (Baroque) describes spring, summer, autumn, and winter through music.
+? What is Gregorian chant? :: Simple religious songs sung in unison in the Medieval period.
+? Name a Baroque composer. :: Any one: Bach, Vivaldi, Handel
+? What is Classical music known for? :: Balance and clarity
+
+# Western Classical Art | Major art periods from the Renaissance onward.
+> European art went through periods with different styles and goals.
+= Renaissance art :: realistic art that used perspective; artists include Leonardo da Vinci and Michelangelo.
+= Perspective :: a technique that makes a flat picture look three-dimensional.
+= Baroque art :: dramatic art with strong contrasts of light and dark.
+= Fresco :: painting on wet plaster on walls or ceilings.
+! Example :: Michelangelo painted the ceiling of the Sistine Chapel as a fresco. Leonardo da Vinci painted the Mona Lisa.
+? Who painted the Mona Lisa? :: Leonardo da Vinci
+? What is a fresco? :: Painting on wet plaster on walls or ceilings.
+? What does perspective do in a painting? :: Makes a flat picture look three-dimensional.
+
+@ HS9-TLE
+# Choosing a TLE Specialization | Picking one skill area to study in depth.
+> In Grade 9, students focus on one TLE area to build deeper skills.
+= Specialization :: one area of TLE studied in depth, such as Cookery or Computer Systems Servicing.
+= Competency :: a skill a worker must be able to do.
+= TESDA :: Technical Education and Skills Development Authority, which sets skill standards.
+= National Certificate (NC) :: a TESDA certification showing a person has the required skills.
+! Example :: A student who likes fixing computers chooses Computer Systems Servicing and later takes the NC II assessment.
+? What does TESDA stand for? :: Technical Education and Skills Development Authority
+? What is a competency? :: A skill a worker must be able to do.
+? What does an NC show? :: That a person has the required skills.
+
+# Occupational Health and Safety | Protecting workers from hazards at work.
+> Every job has risks. Occupational health and safety helps prevent injuries and illness.
+= Occupational health and safety (OHS) :: practices that protect workers' health and safety.
+= Physical hazard :: things like noise, heat, and sharp objects.
+= Chemical hazard :: harmful substances like cleaning chemicals.
+= Ergonomic hazard :: poor posture or repetitive movements that strain the body.
+! Example :: A computer technician uses an anti-static wrist strap and sits with proper posture to avoid electrical and ergonomic hazards.
+? What is OHS? :: Practices that protect workers' health and safety.
+? Give one example of a chemical hazard. :: Any one: cleaning chemicals, paint, pesticides
+? Bad posture while using a computer is what type of hazard? :: Ergonomic hazard
